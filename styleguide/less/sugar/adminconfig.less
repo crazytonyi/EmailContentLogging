@@ -1,0 +1,71 @@
+/* Styles for the Admin page */
+
+.admin-config {
+  .admin-config-body-header {
+    margin: 13px 0 0 22px;
+
+    .admin-config-body-title {
+      font-weight: bold;
+      font-size: @fontSizeMedium;
+    }
+  }
+
+  .admin-config-body {
+    .record-label {
+      float: left;
+    }
+
+    .admin-config-help-block {
+      .console-config-instructions();
+
+      margin: 22px 8px;
+    }
+  }
+
+  .record {
+    .labels-on-side:not(.empty-label) {
+      padding-left: 0;
+    }
+
+    .nav.nav-tabs {
+      padding-top: 10px;
+      background: @white;
+
+      .tab a {
+        margin: 0 0 1px;
+        border-radius: 4px 4px 0 0;
+        padding: 5px 8px;
+      }
+
+      .tab a:hover {
+        background: @white;
+        color: @grayLight;
+      }
+
+      .tab a:focus {
+        outline: none;
+      }
+
+      .tab.active {
+        border: 1px solid @grayMid;
+        border-bottom: 1px solid @white;
+        border-radius: 4px 4px 0 0;
+
+        a {
+          background: @grayLighter;
+          padding: 6px 8px 4px;
+        }
+      }
+    }
+
+    .tab-pane {
+      padding: 30px;
+    }
+
+    .sub-title {
+      margin-left: calc(~"-19vw - 12px");
+      padding: 8px;
+      font-weight: bold;
+    }
+  }
+}

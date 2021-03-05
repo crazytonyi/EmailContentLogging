@@ -1,0 +1,186 @@
+<?php
+/*
+ * Your installation or use of this SugarCRM file is subject to the applicable
+ * terms available at
+ * http://support.sugarcrm.com/Resources/Master_Subscription_Agreements/.
+ * If you do not agree to all of the applicable terms or do not have the
+ * authority to bind the entity as an authorized representative, then do not
+ * install or use this SugarCRM file.
+ *
+ * Copyright (C) SugarCRM Inc. All rights reserved.
+ */
+
+namespace Sugarcrm\IdentityProvider\App\Controller;
+
+use Sugarcrm\IdentityProvider\App\Application;
+use Sugarcrm\IdentityProvider\App\Listener\Success\UpdateDecision\LastLoginIntervalUpdateDecisionStrategy;
+use Sugarcrm\IdentityProvider\App\Listener\Success\UpdateUserLastLoginListener;
+use Sugarcrm\IdentityProvider\App\Provider\TenantConfigInitializer;
+use Sugarcrm\IdentityProvider\Authentication\User;
+use Sugarcrm\IdentityProvider\Srn;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\Security\Core\AuthenticationEvents;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
+use Symfony\Component\Security\Core\Exception\BadCredentialsException;
+use Symfony\Component\Validator\ConstraintViolation;
+use Symfony\Component\Validator\Constraints as Assert;
+
+/**
+ * Controller check user credentials.
+ * Class AuthenticationController
+ */
+class AuthenticationController
+{
+    /**
+     * Checks credentials.
+     * @param Application $app
+     * @param Request $request
+     * @return JsonResponse
+     */
+    public function authenticate(Application $app, Request $request)
+    {
+        $data = [
+            'user_name' => $request->get('user_name'),
+            'password' => $request->get('password'),
+            'tenant' => $request->get('tid'),
+        ];
+        $dataToLog = $data;
+        $dataToLog['password'] = '***obfuscated***';
+
+        $app->getLogger()->debug('Validation auth user request', [
+            'data' => $dataToLog,
+            'tags' => ['IdM.rest.authentication'],
+        ]);
+        $constraint = new Assert\Collection([
+            'tenant' => [new Assert\NotBlank(['message' => 'Field tid is required.'])],
+            'user_name' => [new Assert\NotBlank(['message' => 'Field user_name is required.'])],
+            'password' => [new Assert\NotBlank(['message' => 'Field password is required.'])],
+        ]);
+        $violations = $app->getValidatorService()->validate($data, $constraint);
+        if (count($violations) > 0) {
+            $errors = array_map(function (ConstraintViolation $violation) {
+                return $violation->getMessage();
+            }, iterator_to_array($violations));
+            $app->getLogger()->debug('Invalid request with errors', [
+                'errors' => $errors,
+                'tags' => ['IdM.rest.authentication'],
+            ]);
+            return $this->getUnauthorizedResponse(implode(' ', $errors));
+        }
+        try {
+            $initializer = new TenantConfigInitializer($app);
+            $initializer->__invoke($request);
+
+            $tenantSrn = Srn\Converter::fromString($request->getSession()->get(TenantConfigInitializer::SESSION_KEY));
+            $app->getBearerAuthentication()->authenticateClient($request, $tenantSrn);
+
+            $token = $app->getUsernamePasswordTokenFactory(
+                $data['user_name'],
+                $data['password']
+            )->createAuthenticationToken();
+            $app->getLogger()->info(
+                'Trying to authenticate user {user_name} in tenant {tenant}',
+                [
+                    'user_name' => $token->getUsername(),
+                    'tenant' => Srn\Converter::toString($tenantSrn),
+                    'tags' => ['IdM.rest.authentication'],
+                ]
+            );
+
+            $dispatcher = $app->getEventDispatcher();
+            if ($dispatcher) {
+                $events = $dispatcher->getListeners(AuthenticationEvents::AUTHENTICATION_SUCCESS);
+                foreach ($events as $event) {
+                    if ($event instanceof UpdateUserLastLoginListener) {
+                        $event->setUpdateDecisionStrategy(new LastLoginIntervalUpdateDecisionStrategy());
+                        break;
+                    }
+                }
+            }
+
+            $token = $app->getAuthManagerService()->authenticate($token);
+            /** @var User $localUser */
+            $localUser = $token->getUser()->getLocalUser();
+            $userIdentity = $localUser->getAttribute('id');
+            $userSrn = $app->getSrnManager($tenantSrn->getRegion())->createUserSrn(
+                $tenantSrn->getTenantId(),
+                $userIdentity
+            );
+
+            $claims = $app->getOIDCClaimsService()->getUserClaims($localUser, ['profile', 'email', 'address', 'phone']);
+            $claims['tid'] = Srn\Converter::toString($tenantSrn);
+
+            $result = [
+                'status' => 'success',
+                'user' => [
+                    'sub' => Srn\Converter::toString($userSrn),
+                    'id_ext' => $claims,
+                ],
+            ];
+            $app->getLogger()->info(
+                'Authentication success for user {user_name} with SRN {user_srn} in tenant {tenant} from {ip}',
+                [
+                    'user_name' => $token->getUsername(),
+                    'user_srn' => Srn\Converter::toString($userSrn),
+                    'tenant' => Srn\Converter::toString($tenantSrn),
+                    'ip' => $request->getClientIp(),
+                    'tags' => ['IdM.rest.authentication'],
+                    'event' => 'after_login',
+                ]
+            );
+            return new JsonResponse($result);
+        } catch (BadCredentialsException $e) {
+            $app->getLogger()->notice(
+                'Bad credentials occurred for user {user_name} with SRN {user_srn} in tenant {tenant}',
+                [
+                    'user_name' => $data['user_name'],
+                    'user_srn' => isset($userSrn) ? Srn\Converter::toString($userSrn) : 'unknown',
+                    'tenant' => isset($tenantSrn) ? Srn\Converter::toString($tenantSrn) : 'invalid',
+                    'tags' => ['IdM.rest.authentication'],
+                    'event' => 'login_failed',
+                ]
+            );
+            return $this->getUnauthorizedResponse('Invalid credentials');
+        } catch (AuthenticationException $e) {
+            $app->getLogger()->warning(
+                'Authentication Exception occurred for user {user_name} with SRN {user_srn} in tenant {tenant}',
+                [
+                    'user_name' => $data['user_name'],
+                    'user_srn' => isset($userSrn) ? Srn\Converter::toString($userSrn) : 'unknown',
+                    'tenant' => isset($tenantSrn) ? Srn\Converter::toString($tenantSrn) : 'invalid',
+                    'exception' => $e,
+                    'tags' => ['IdM.rest.authentication'],
+                    'event' => 'login_failed',
+                ]
+            );
+            return $this->getUnauthorizedResponse($e->getMessage());
+        } catch (\Exception $e) {
+            $app->getLogger()->error('Exception occurred for user {user_name} with SRN {user_srn} in tenant {tenant}', [
+                'user_name' => $data['user_name'],
+                'user_srn' => isset($userSrn) ? Srn\Converter::toString($userSrn) : 'unknown',
+                'tenant' => isset($tenantSrn) ? Srn\Converter::toString($tenantSrn) : 'invalid',
+                'exception' => $e,
+                'tags' => ['IdM.rest.authentication'],
+                'event' => 'login_failed',
+            ]);
+            return $this->getUnauthorizedResponse('APP ERROR: ' . $e->getMessage());
+        }
+    }
+
+    /**
+     * Create response if user credentials are invalid.
+     * @param string $message
+     * @return JsonResponse
+     */
+    protected function getUnauthorizedResponse($message)
+    {
+        $result = [
+            'status' => 'error',
+            'error' => $message,
+        ];
+        $response = new JsonResponse($result, Response::HTTP_UNAUTHORIZED);
+        return $response;
+    }
+}

@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-US" datatype="plaintext" original="en.xlf" target-language="he">
+    <body>
+      <trans-unit id="1" approved="yes">
+        <source>Tenant</source>
+        <target state="final">דייר</target>
+      </trans-unit>
+      <trans-unit id="2" approved="yes">
+        <source>User Name</source>
+        <target state="final">שם משתמש</target>
+      </trans-unit>
+      <trans-unit id="3" approved="yes">
+        <source>Password</source>
+        <target state="final">סיסמה</target>
+      </trans-unit>
+      <trans-unit id="4" approved="yes">
+        <source>Forgot Password?</source>
+        <target state="final">שכחת את הסיסמה?</target>
+      </trans-unit>
+      <trans-unit id="5" approved="yes">
+        <source>Log In</source>
+        <target state="final">כניסה</target>
+      </trans-unit>
+      <trans-unit id="6" approved="yes">
+        <source>Log out</source>
+        <target state="final">יציאה</target>
+      </trans-unit>
+      <trans-unit id="7" approved="yes">
+        <source>Single Sign-On</source>
+        <target state="final">כניסה יחידה (SSO)</target>
+      </trans-unit>
+      <trans-unit id="8" approved="yes">
+        <source>You are logged in as %user_name%</source>
+        <target state="final">אתה מחובר כ-%user_name%</target>
+      </trans-unit>
+      <trans-unit id="9" approved="yes">
+        <source>Your tenant id is %tenant%</source>
+        <target state="final">מזהה הדייר שלך הוא %tenant%</target>
+      </trans-unit>
+      <trans-unit id="10" approved="yes">
+        <source>Authentication provider - %provider%</source>
+        <target state="final">ספק אימות - %provider%</target>
+      </trans-unit>
+      <trans-unit id="11" approved="yes">
+        <source>Application not verified</source>
+        <target state="final">היישום אינו מאומת</target>
+      </trans-unit>
+      <trans-unit id="12" approved="yes">
+        <source>This app hasn't been verified by SugarCRM admin yet and confirmed it's authentic.</source>
+        <target state="final">אפליקציה זו לא אומתה עדיין על-ידי מנהל SugarCRM ולא התקבל אישור כי היא אותנטית.</target>
+      </trans-unit>
+      <trans-unit id="13" approved="yes">
+        <source>Unverified apps may pose a threat to your personal data.</source>
+        <target state="final">אפליקציות לא מאומתות עלולות לסכן את הנתונים האישיים שלך.</target>
+      </trans-unit>
+      <trans-unit id="14" approved="yes">
+        <source>Back to Safety</source>
+        <target state="final">חזרה לחוף מבטחים</target>
+      </trans-unit>
+      <trans-unit id="15" approved="yes">
+        <source>Application is requesting access</source>
+        <target state="final">האפליקציה מבקשת הרשאת גישה</target>
+      </trans-unit>
+      <trans-unit id="16" approved="yes">
+        <source>"%client%" is requesting access.</source>
+        <target state="final">"%client%" מבקש הרשאת גישה.</target>
+      </trans-unit>
+      <trans-unit id="17" approved="yes">
+        <source>"%client%" is requesting access to use your Sugar account to:</source>
+        <target state="final">"%client%" מבקש הרשאת גישה לצורך שימוש בחשבון Sugar שלך ל:</target>
+      </trans-unit>
+      <trans-unit id="18" approved="yes">
+        <source>Do you want to allow this access?</source>
+        <target state="final">האם ברצונך להתיר גישה זו?</target>
+      </trans-unit>
+      <trans-unit id="19" approved="yes">
+        <source>No, Thanks</source>
+        <target state="final">לא, תודה</target>
+      </trans-unit>
+      <trans-unit id="20" approved="yes">
+        <source>Allow access</source>
+        <target state="final">התר גישה</target>
+      </trans-unit>
+      <trans-unit id="21" approved="yes">
+        <source>Sorry, service is not able to process the request.</source>
+        <target state="final">מצטערים, אין לשירות אפשרות לעבד את הבקשה.</target>
+      </trans-unit>
+      <trans-unit id="22" approved="yes">
+        <source>error</source>
+        <target state="final">שגיאה</target>
+      </trans-unit>
+      <trans-unit id="25" approved="yes">
+        <source>Enter your user name below to receive the password reset instructions.</source>
+        <target state="final">כדי לקבל את ההנחיות לאיפוס סיסמה, הזן את שם המשתמש שלך להלן.</target>
+      </trans-unit>
+      <trans-unit id="26" approved="yes">
+        <source>Required</source>
+        <target state="final">נדרש</target>
+      </trans-unit>
+      <trans-unit id="27" approved="yes">
+        <source>Cancel</source>
+        <target state="final">ביטול</target>
+      </trans-unit>
+      <trans-unit id="28" approved="yes">
+        <source>Send</source>
+        <target state="final">שלח</target>
+      </trans-unit>
+      <trans-unit id="29" approved="yes">
+        <source>Reset your password</source>
+        <target state="final">איפוס סיסמה</target>
+      </trans-unit>
+      <trans-unit id="30" approved="yes">
+        <source>Please choose a new password to finish log in.</source>
+        <target state="final">להשלמת הכניסה, בחר סיסמה חדשה.</target>
+      </trans-unit>
+      <trans-unit id="31" approved="yes">
+        <source>Read some tips on %link%creating a secure password.%endlink%</source>
+        <target state="final">ראה טיפים ל%link%יצירת סיסמה מאובטחת.%endlink%</target>
+      </trans-unit>
+      <trans-unit id="32" approved="yes">
+        <source>New password</source>
+        <target state="final">סיסמה חדשה</target>
+      </trans-unit>
+      <trans-unit id="33" approved="yes">
+        <source>Confirm password</source>
+        <target state="final">אישור סיסמה</target>
+      </trans-unit>
+      <trans-unit id="34" approved="yes">
+        <source>Change password</source>
+        <target state="final">שינוי סיסמה</target>
+      </trans-unit>
+      <trans-unit id="35" approved="yes">
+        <source>Password reset successful</source>
+        <target state="final">איפוס הסיסמה בוצע בהצלחה</target>
+      </trans-unit>
+      <trans-unit id="36" approved="yes">
+        <source>Awesome, you've successfully updated your password.</source>
+        <target state="final">מעולה, עדכנת את הסיסמה בהצלחה.</target>
+      </trans-unit>
+      <trans-unit id="37" approved="yes">
+        <source>Now you can log in and check if %link%your profile%endlink% is correct.</source>
+        <target state="final">עכשיו תוכל להיכנס ולבדוק אם %link%הפרופיל שלך%endlink% תקין.</target>
+      </trans-unit>
+      <trans-unit id="38" approved="yes">
+        <source>Password reset email sent</source>
+        <target state="final">נשלח דוא"ל לאיפוס סיסמה</target>
+      </trans-unit>
+      <trans-unit id="39" approved="yes">
+        <source>An email has been sent to following address %emailaddress%.</source>
+        <target state="final">נשלח דוא"ל לכתובת הבאה: %emailaddress%.</target>
+      </trans-unit>
+      <trans-unit id="40" approved="yes">
+        <source>Follow the directions in the email to reset your password.</source>
+        <target state="final">בצע את ההנחיות המפורטות בהודעה כדי לאפס את הסיסמה.</target>
+      </trans-unit>
+      <trans-unit id="41" approved="yes">
+        <source>Done</source>
+        <target state="final">בוצע</target>
+      </trans-unit>
+      <trans-unit id="42" approved="yes">
+        <source>Login using SAML</source>
+        <target state="final">כניסה עם SAML</target>
+      </trans-unit>
+      <trans-unit id="43" approved="yes">
+        <source>User is logged out</source>
+        <target state="final">המשתמש מנותק מהחשבון</target>
+      </trans-unit>
+      <trans-unit id="44" approved="yes">
+        <source>Back</source>
+        <target state="final">הקודם</target>
+      </trans-unit>
+      <trans-unit id="45" approved="yes">
+        <source>Invalid tenant ID</source>
+        <target state="final">מזהה דייר לא חוקי</target>
+      </trans-unit>
+      <trans-unit id="46" approved="yes">
+        <source>All fields are required</source>
+        <target state="final">כל השדות נדרשים</target>
+      </trans-unit>
+      <trans-unit id="47" approved="yes">
+        <source>Invalid credentials</source>
+        <target state="final">אישורי כניסה לא חוקיים</target>
+      </trans-unit>
+      <trans-unit id="48" approved="yes">
+        <source>Password expired</source>
+        <target state="final">תוקף הסיסמה פג</target>
+      </trans-unit>
+      <trans-unit id="49" approved="yes">
+        <source>Invalid scope</source>
+        <target state="final">טווח לא חוקי</target>
+      </trans-unit>
+      <trans-unit id="50" approved="yes">
+        <source>Authentication SAML request is not valid</source>
+        <target state="final">בקשת SAML לאימות אינה חוקית</target>
+      </trans-unit>
+      <trans-unit id="51" approved="yes">
+        <source>Authentication SAML response is not valid</source>
+        <target state="final">תגובת SAML לאימות אינה חוקית</target>
+      </trans-unit>
+      <trans-unit id="52" approved="yes">
+        <source>Too many failed login attempts.</source>
+        <target state="final">יותר מדי נסיונות כניסה שכשלו.</target>
+      </trans-unit>
+      <trans-unit id="53" approved="yes">
+        <source>Please contact the system administrator.</source>
+        <target state="final">פנה למנהל המערכת.</target>
+      </trans-unit>
+      <trans-unit id="54" approved="yes">
+        <source>You can try logging in again in</source>
+        <target state="final">ניתן לנסות שוב להיכנס</target>
+      </trans-unit>
+      <trans-unit id="55" approved="yes">
+        <source>days</source>
+        <target state="final">ימים</target>
+      </trans-unit>
+      <trans-unit id="56" approved="yes">
+        <source>hours</source>
+        <target state="final">שעות</target>
+      </trans-unit>
+      <trans-unit id="57" approved="yes">
+        <source>minutes</source>
+        <target state="final">דקות</target>
+      </trans-unit>
+      <trans-unit id="58" approved="yes">
+        <source>seconds</source>
+        <target state="final">שניות</target>
+      </trans-unit>
+      <trans-unit id="59" approved="yes">
+        <source>Private key and x509cert should be defined</source>
+        <target state="final">יש להגדיר מפתח פרטי ו-x509cert</target>
+      </trans-unit>
+      <trans-unit id="60" approved="yes">
+        <source>Invalid IdP configuration</source>
+        <target state="final">תצורת IdP לא חוקית</target>
+      </trans-unit>
+      <trans-unit id="61" approved="yes">
+        <source>Invalid authentication services configuration</source>
+        <target state="final">תצורת שירותי אימות לא חוקית</target>
+      </trans-unit>
+      <trans-unit id="62" approved="yes">
+        <source>LDAP config option groupDn must not be empty</source>
+        <target state="final">groupDn של אפשרות התצורה LDAP אינו יכול להיות ריק</target>
+      </trans-unit>
+      <trans-unit id="63" approved="yes">
+        <source>LDAP groupAttribute must not be empty</source>
+        <target state="final">groupAttribute של LDAP אינו יכול להיות ריק</target>
+      </trans-unit>
+      <trans-unit id="64" approved="yes">
+        <source>LDAP baseDn must not be empty</source>
+        <target state="final">baseDn של LDAP אינו יכול להיות ריק</target>
+      </trans-unit>
+      <trans-unit id="65" approved="yes">
+        <source>Consent not found</source>
+        <target state="final">ההסכמה לא נמצאה</target>
+      </trans-unit>
+      <trans-unit id="66" approved="yes">
+        <source>Consent session not found</source>
+        <target state="final">הפעלת Consent לא נמצאה</target>
+      </trans-unit>
+      <trans-unit id="67" approved="yes">
+        <source>Failed to send email for password recovery. Please try again.</source>
+        <target state="final">לא היתה אפשרות לשלוח דוא"ל לשחזור סיסמה. נסה שוב.</target>
+      </trans-unit>
+      <trans-unit id="68" approved="yes">
+        <source>SAML is not configured for given tenant</source>
+        <target state="final">לא הוגדר SAML עבור הדייר הנתון</target>
+      </trans-unit>
+      <trans-unit id="69" approved="yes">
+        <source>Invalid SAML configuration</source>
+        <target state="final">תצורת SAML לא חוקית</target>
+      </trans-unit>
+      <trans-unit id="70" approved="yes">
+        <source>SAML metadata validation failed:</source>
+        <target state="final">אימות המטא-נתונים של SAML נכשל:</target>
+      </trans-unit>
+      <trans-unit id="71" approved="yes">
+        <source>Invalid SAML logout data</source>
+        <target state="final">נתוני היציאה מ-SAML לא חוקיים</target>
+      </trans-unit>
+      <trans-unit id="72" approved="yes">
+        <source>Required parameters missing</source>
+        <target state="final">חסרים פרמטרים נדרשים</target>
+      </trans-unit>
+      <trans-unit id="73" approved="yes">
+        <source>Invalid parameters</source>
+        <target state="final">פרמטרים לא חוקיים</target>
+      </trans-unit>
+      <trans-unit id="74" approved="yes">
+        <source>Password is empty</source>
+        <target state="final">שדה הסיסמה ריק</target>
+      </trans-unit>
+      <trans-unit id="75" approved="yes">
+        <source>Password is too short. It should have {{ limit }} characters or more.</source>
+        <target state="final">הסיסמה קצרה מדי. היא חייבת לכלול לפחות {{ limit }} תווים.</target>
+      </trans-unit>
+      <trans-unit id="76" approved="yes">
+        <source>Password is too long. It should have {{ limit }} characters or less.</source>
+        <target state="final">הסיסמה ארוכה מדי. היא חייבת לכלול מקסימום {{ limit }} תווים.</target>
+      </trans-unit>
+      <trans-unit id="77" approved="yes">
+        <source>Password should contains at least one upper-case letter</source>
+        <target state="final">הסיסמה חייבת לכלול לפחות אות רישית אחת</target>
+      </trans-unit>
+      <trans-unit id="78" approved="yes">
+        <source>Password should contains at least one lower-case letter</source>
+        <target state="final">הסיסמה חייבת לכלול לפחות אות קטנה אחת</target>
+      </trans-unit>
+      <trans-unit id="79" approved="yes">
+        <source>Password should contains at least one number</source>
+        <target state="final">הסיסמה חייבת לכלול לפחות ספרה אחת</target>
+      </trans-unit>
+      <trans-unit id="80" approved="yes">
+        <source>Password should contains at least one special character</source>
+        <target state="final">הסיסמה חייבת לכלול לפחות תו מיוחד אחד</target>
+      </trans-unit>
+      <trans-unit id="81" approved="yes">
+        <source>Password confirmation is empty</source>
+        <target state="final">שדה אישור הסיסמה ריק</target>
+      </trans-unit>
+      <trans-unit id="82" approved="yes">
+        <source>Password and password confirmation don't match</source>
+        <target state="final">אין התאמה בין הסיסמה לבין אישור הסיסמה</target>
+      </trans-unit>
+      <trans-unit id="83" approved="yes">
+        <source>One time token not found</source>
+        <target state="final">אסימון זמן אחד לא נמצא</target>
+      </trans-unit>
+      <trans-unit id="84" approved="yes">
+        <source>Tenant not found</source>
+        <target state="final">הדייר לא נמצא</target>
+      </trans-unit>
+      <trans-unit id="85" approved="yes">
+        <source>User not found</source>
+        <target state="final">המשתמש לא נמצא</target>
+      </trans-unit>
+      <trans-unit id="86" approved="yes">
+        <source>View</source>
+        <target state="final">הצג</target>
+      </trans-unit>
+      <trans-unit id="87" approved="yes">
+        <source>email</source>
+        <target state="final">דוא"ל</target>
+      </trans-unit>
+      <trans-unit id="88" approved="yes">
+        <source>address</source>
+        <target state="final">כתובת</target>
+      </trans-unit>
+      <trans-unit id="89" approved="yes">
+        <source>phone number</source>
+        <target state="final">מספר טלפון</target>
+      </trans-unit>
+      <trans-unit id="90" approved="yes">
+        <source>Access all the above information at any time</source>
+        <target state="final">גישה לכל המידע שלעיל בכל עת</target>
+      </trans-unit>
+      <trans-unit id="91" approved="yes">
+        <source>View your Sugar profile which includes first and last name</source>
+        <target state="final">הצג את פרופיל Sugar שלך שכולל שם פרטי ושם משפחה</target>
+      </trans-unit>
+      <trans-unit id="92" approved="yes">
+        <source>Authenticate using OpenID Connect</source>
+        <target state="final">אימות עם OpenID Connect</target>
+      </trans-unit>
+      <trans-unit id="93" approved="yes">
+        <source>View and update any Sugar data (Accounts, Contacts, Leads, etc.) that you are permitted to access</source>
+        <target state="final">הצג ועדכן נתוני Sugar (חשבונות, אנשי קשר, לידים וכו') שיש לך הרשאת גישה אליהם</target>
+      </trans-unit>
+      <trans-unit id="94" approved="yes">
+        <source>View and manage your Identity and Access Management (IAM) objects</source>
+        <target state="final">הצג ונהל את אובייקטי ניהול זהויות וגישה (IAM) שלך</target>
+      </trans-unit>
+      <trans-unit id="95" approved="yes">
+        <source>Only authorized users can change password</source>
+        <target state="final">רק משתמשים מורשים יכולים לשנות סיסמה</target>
+      </trans-unit>
+      <trans-unit id="96" approved="yes">
+        <source>Only local users can change password</source>
+        <target state="final">רק משתמשים מקומיים יכולים לשנות סיסמה</target>
+      </trans-unit>
+      <trans-unit id="97" approved="yes">
+        <source>Change your password</source>
+        <target state="final">שינוי הסיסמה</target>
+      </trans-unit>
+      <trans-unit id="98" approved="yes">
+        <source>Please enter your old password and choose a new password.</source>
+        <target state="final">הזן את הסיסמה הקודמת ובחר סיסמה חדשה.</target>
+      </trans-unit>
+      <trans-unit id="99" approved="yes">
+        <source>Old password</source>
+        <target state="final">סיסמה קודמת</target>
+      </trans-unit>
+      <trans-unit id="100" approved="yes">
+        <source>Old password is empty</source>
+        <target state="final">שדה הסיסמה הקודמת ריק</target>
+      </trans-unit>
+      <trans-unit id="101" approved="yes">
+        <source>Old password is not valid</source>
+        <target state="final">הסיסמה הקודמת לא חוקית</target>
+      </trans-unit>
+      <trans-unit id="102" approved="yes">
+        <source>No user is found</source>
+        <target state="final">לא נמצא אף משתמש</target>
+      </trans-unit>
+      <trans-unit id="103" approved="yes">
+        <source>Password changed successful</source>
+        <target state="final">שינוי הסיסמה בוצע בהצלחה</target>
+      </trans-unit>
+      <trans-unit id="104" approved="yes">
+        <source>Continue</source>
+        <target state="final">המשך</target>
+      </trans-unit>
+      <trans-unit id="105" approved="yes">
+        <source>Tenant isn't active</source>
+        <target state="final">הדייר אינו פעיל</target>
+      </trans-unit>
+      <trans-unit id="106" approved="yes">
+        <source>New password must be different from previous password</source>
+        <target state="final">הסיסמה החדשה חייבת להיות שונה מהקודמת</target>
+      </trans-unit>
+      <trans-unit id="107" approved="yes">
+        <source>Show log in form</source>
+        <target state="final">הצג טופס כניסה</target>
+      </trans-unit>
+      <trans-unit id="108" approved="yes">
+        <source>Tenant ID</source>
+        <target state="final">מזהה דייר</target>
+      </trans-unit>
+      <trans-unit id="109" approved="yes">
+        <source>Next</source>
+        <target state="final">הבא</target>
+      </trans-unit>
+      <trans-unit id="110" approved="yes">
+        <source>Please proceed with caution and only allow access if you are logging in to "%client%".</source>
+        <target state="final">המשך תוך נקיטת זהירות, והתר גישה רק אם אתה נכנס אל "%client%".</target>
+      </trans-unit>
+      <trans-unit id="111" approved="yes">
+        <source>Learn about how %client% will handle your Sugar data by reviewing the %termsLink%Terms of Use%endlink% and %privacyLink%Privacy policies%endlink%.</source>
+        <target state="final">עיין ב%termsLink%תנאי השימוש%endlink% וב%privacyLink%מדיניות הפרטיות%endlink% כדי להבין איזה שימוש ייעשה על-ידי %client% בנתוני Sugar שלך.</target>
+      </trans-unit>
+      <trans-unit id="112" approved="yes">
+        <source>You are about to authorize the application "%client%" to act on behalf of your users using the following permissions:</source>
+        <target state="final">אתה עומד לתת לאפליקציה "%client%" הרשאה לבצע פעולות מטעם המשתמשים שלך עם ההרשאות הבאות:</target>
+      </trans-unit>
+      <trans-unit id="113" approved="yes">
+        <source>You are about to authorize of application "%client%" to act on behalf of your users.</source>
+        <target state="final">אתה עומד לתת לאפליקציה "%client%" הרשאה לבצע פעולות מטעם המשתמשים שלך.</target>
+      </trans-unit>
+      <trans-unit id="114" approved="yes">
+        <source>Remove access for application</source>
+        <target state="final">הסרת הרשאת הגישה של האפליקציה</target>
+      </trans-unit>
+      <trans-unit id="115" approved="yes">
+        <source>You are about to remove authorization for the application  "%client%" to act on behalf of your users.</source>
+        <target state="final">אתה עומד לבטל את ההרשאה של האפליקציה "%client%" לבצע פעולות מטעם המשתמשים שלך.</target>
+      </trans-unit>
+      <trans-unit id="116" approved="yes">
+        <source>You are about to remove authorization of application "%client%" to act on behalf of your users with the following permissions:</source>
+        <target state="final">אתה עומד לבטל את ההרשאה של האפליקציה "%client%" לבצע פעולות מטעם המשתמשים שלך עם ההרשאות הבאות:</target>
+      </trans-unit>
+      <trans-unit id="117" approved="yes">
+        <source>Do you want to remove this access?</source>
+        <target state="final">האם ברצונך לבטל גישה זו?</target>
+      </trans-unit>
+      <trans-unit id="118" approved="yes">
+        <source>Remove access</source>
+        <target state="final">ביטול הגישה</target>
+      </trans-unit>
+      <trans-unit id="119" approved="yes">
+        <source>Authorize access for application</source>
+        <target state="final">מתן הרשאת גישה לאפליקציה</target>
+      </trans-unit>
+      <trans-unit id="120" approved="yes">
+        <source>User account is disabled</source>
+        <target state="final">חשבון המשתמש מושבת</target>
+      </trans-unit>
+      <trans-unit id="121" approved="yes">
+        <source>Did not find tenant?</source>
+        <target state="final">לא מצאת את הדייר?</target>
+      </trans-unit>
+      <trans-unit id="122" approved="yes">
+        <source>Continue with</source>
+        <target state="final">המשך עם</target>
+      </trans-unit>
+      <trans-unit id="123" approved="yes">
+        <source>Log into another tenant</source>
+        <target state="final">כניסה לדייר אחר</target>
+      </trans-unit>
+      <trans-unit id="124" approved="yes">
+        <source>logged out</source>
+        <target state="final">לא מחובר</target>
+      </trans-unit>
+      <trans-unit id="125" approved="yes">
+        <source>Welcome to</source>
+        <target state="final">ברוך הבא אל</target>
+      </trans-unit>
+      <trans-unit id="126" approved="yes">
+        <source>Minimum length = %minimum_length%</source>
+        <target state="final">אורך מינימלי = %minimum_length%</target>
+      </trans-unit>
+      <trans-unit id="127" approved="yes">
+        <source>Maximum length = %maximum_length%</source>
+        <target state="final">אורך מקסימלי = %maximum_length%</target>
+      </trans-unit>
+      <trans-unit id="128" approved="yes">
+        <source>Must contain one upper case letter (A-Z)</source>
+        <target state="final">חייבת לכלול אות רישית (A-Z) אחת</target>
+      </trans-unit>
+      <trans-unit id="129" approved="yes">
+        <source>Must contain one lower case letter (a-z)</source>
+        <target state="final">חייבת לכלול אות קטנה (a-z) אחת</target>
+      </trans-unit>
+      <trans-unit id="130" approved="yes">
+        <source>Must contain one number (0-9)</source>
+        <target state="final">חייבת לכלול ספרה אחת (0-9)</target>
+      </trans-unit>
+      <trans-unit id="131" approved="yes">
+        <source>Must contain one special character (~!@#$%^&amp;*()_+-={}|)</source>
+        <target state="final">חייבת לכלול תו מיוחד אחד (~!@#$%^&amp;*()_+-={}|)</target>
+      </trans-unit>
+      <trans-unit id="132" approved="yes">
+        <source>Password requirements:</source>
+        <target state="final">דרישות סיסמה:</target>
+      </trans-unit>
+      <trans-unit id="133" approved="yes">
+        <source>The password you entered does not meet the password requirements.</source>
+        <target state="final">הסיסמה שהזנת לא עמדה בדרישות ליצירת סיסמה.</target>
+      </trans-unit>
+      <trans-unit id="134" approved="yes">
+        <source>We could not find your account with that User Name. Please double-check and try again.</source>
+        <target state="final">לא מצאנו חשבון בעל שם משתמש זה. בדוק שוב שהזנת את שמו כהלכה ונסה שנית.</target>
+      </trans-unit>
+      <trans-unit id="135" approved="yes">
+        <source>You have opened a one-time password reset link that has either been used or is no longer valid. Please request a new one using the form below.</source>
+        <target state="final">פתחת קישור חד-פעמי לאיפוס סיסמה שכבר היה בשימוש או שתוקפו פג. בקש קישור חדש באמצעות הטופס שלהלן.</target>
+      </trans-unit>
+      <trans-unit id="136">
+        <source>New passwords do not match.</source>
+        <target state="needs-translation">New passwords do not match.</target>
+      </trans-unit>
+      <trans-unit id="137">
+        <source>Cannot change the password now. Try again later.</source>
+        <target state="needs-translation">Cannot change the password now. Try again later.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

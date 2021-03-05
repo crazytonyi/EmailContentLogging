@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-US" datatype="plaintext" original="en.xlf" target-language="et">
+    <body>
+      <trans-unit id="1" approved="yes">
+        <source>Tenant</source>
+        <target state="final">Rentnik</target>
+      </trans-unit>
+      <trans-unit id="2" approved="yes">
+        <source>User Name</source>
+        <target state="final">Kasutajanimi</target>
+      </trans-unit>
+      <trans-unit id="3" approved="yes">
+        <source>Password</source>
+        <target state="final">Parool</target>
+      </trans-unit>
+      <trans-unit id="4" approved="yes">
+        <source>Forgot Password?</source>
+        <target state="final">Kas unustasite parooli?</target>
+      </trans-unit>
+      <trans-unit id="5" approved="yes">
+        <source>Log In</source>
+        <target state="final">Logi sisse</target>
+      </trans-unit>
+      <trans-unit id="6" approved="yes">
+        <source>Log out</source>
+        <target state="final">Logi välja</target>
+      </trans-unit>
+      <trans-unit id="7" approved="yes">
+        <source>Single Sign-On</source>
+        <target state="final">Ühekordne sisselogimine</target>
+      </trans-unit>
+      <trans-unit id="8" approved="yes">
+        <source>You are logged in as %user_name%</source>
+        <target state="final">Olete sisse loginud kasutajaga %user_name%</target>
+      </trans-unit>
+      <trans-unit id="9" approved="yes">
+        <source>Your tenant id is %tenant%</source>
+        <target state="final">Teie rentniku ID on %tenant%</target>
+      </trans-unit>
+      <trans-unit id="10" approved="yes">
+        <source>Authentication provider - %provider%</source>
+        <target state="final">Authentimise pakkuja – %provider%</target>
+      </trans-unit>
+      <trans-unit id="11" approved="yes">
+        <source>Application not verified</source>
+        <target state="final">Rakendust pole kinnitatud</target>
+      </trans-unit>
+      <trans-unit id="12" approved="yes">
+        <source>This app hasn't been verified by SugarCRM admin yet and confirmed it's authentic.</source>
+        <target state="final">SugarCRM-i administraator pole seda rakendust veel kontrollinud ega kinnitanud, et see on autentne.</target>
+      </trans-unit>
+      <trans-unit id="13" approved="yes">
+        <source>Unverified apps may pose a threat to your personal data.</source>
+        <target state="final">Kontrollimata rakendused võivad ohustada teie isiklikke andmeid.</target>
+      </trans-unit>
+      <trans-unit id="14" approved="yes">
+        <source>Back to Safety</source>
+        <target state="final">Tagais turvalise juurde</target>
+      </trans-unit>
+      <trans-unit id="15" approved="yes">
+        <source>Application is requesting access</source>
+        <target state="final">Rakendus taotleb ligipääsu</target>
+      </trans-unit>
+      <trans-unit id="16" approved="yes">
+        <source>"%client%" is requesting access.</source>
+        <target state="final">„%client%“ taotleb ligipääsu.</target>
+      </trans-unit>
+      <trans-unit id="17" approved="yes">
+        <source>"%client%" is requesting access to use your Sugar account to:</source>
+        <target state="final">„%client%“ taotleb ligipääsu teie Sugari konto kasutamiseks:</target>
+      </trans-unit>
+      <trans-unit id="18" approved="yes">
+        <source>Do you want to allow this access?</source>
+        <target state="final">Kas soovite anda ligipääsu?</target>
+      </trans-unit>
+      <trans-unit id="19" approved="yes">
+        <source>No, Thanks</source>
+        <target state="final">Ei, aitäh</target>
+      </trans-unit>
+      <trans-unit id="20" approved="yes">
+        <source>Allow access</source>
+        <target state="final">Luba ligipääs</target>
+      </trans-unit>
+      <trans-unit id="21" approved="yes">
+        <source>Sorry, service is not able to process the request.</source>
+        <target state="final">Kahjuks ei saa teenus taotlust töödelda.</target>
+      </trans-unit>
+      <trans-unit id="22" approved="yes">
+        <source>error</source>
+        <target state="final">viga</target>
+      </trans-unit>
+      <trans-unit id="25" approved="yes">
+        <source>Enter your user name below to receive the password reset instructions.</source>
+        <target state="final">Parooli lähtestusjuhiste saamiseks sisestage oma kasutajanimi.</target>
+      </trans-unit>
+      <trans-unit id="26" approved="yes">
+        <source>Required</source>
+        <target state="final">Nõutav</target>
+      </trans-unit>
+      <trans-unit id="27" approved="yes">
+        <source>Cancel</source>
+        <target state="final">Tühista</target>
+      </trans-unit>
+      <trans-unit id="28" approved="yes">
+        <source>Send</source>
+        <target state="final">Saada</target>
+      </trans-unit>
+      <trans-unit id="29" approved="yes">
+        <source>Reset your password</source>
+        <target state="final">Lähtesta oma parool</target>
+      </trans-unit>
+      <trans-unit id="30" approved="yes">
+        <source>Please choose a new password to finish log in.</source>
+        <target state="final">Valige uus parool, et sisselogimine lõpule viia.</target>
+      </trans-unit>
+      <trans-unit id="31" approved="yes">
+        <source>Read some tips on %link%creating a secure password.%endlink%</source>
+        <target state="final">Lugege nõuandeid, kuidas %link%luua turvaline parool.%endlink%</target>
+      </trans-unit>
+      <trans-unit id="32" approved="yes">
+        <source>New password</source>
+        <target state="final">Uus parool</target>
+      </trans-unit>
+      <trans-unit id="33" approved="yes">
+        <source>Confirm password</source>
+        <target state="final">Kinnita parool</target>
+      </trans-unit>
+      <trans-unit id="34" approved="yes">
+        <source>Change password</source>
+        <target state="final">Muuda parooli</target>
+      </trans-unit>
+      <trans-unit id="35" approved="yes">
+        <source>Password reset successful</source>
+        <target state="final">Parooli lähtestamine õnnestus</target>
+      </trans-unit>
+      <trans-unit id="36" approved="yes">
+        <source>Awesome, you've successfully updated your password.</source>
+        <target state="final">Äge, olete oma parooli edukalt värskendanud.</target>
+      </trans-unit>
+      <trans-unit id="37" approved="yes">
+        <source>Now you can log in and check if %link%your profile%endlink% is correct.</source>
+        <target state="final">Nüüd saate sisse logida ja kontrollida, kas %link%teie profiil%endlink% on õige.</target>
+      </trans-unit>
+      <trans-unit id="38" approved="yes">
+        <source>Password reset email sent</source>
+        <target state="final">Parooli lähtestamise meil saadetud</target>
+      </trans-unit>
+      <trans-unit id="39" approved="yes">
+        <source>An email has been sent to following address %emailaddress%.</source>
+        <target state="final">Meil saadeti aadressile %emailaddress%.</target>
+      </trans-unit>
+      <trans-unit id="40" approved="yes">
+        <source>Follow the directions in the email to reset your password.</source>
+        <target state="final">Parooli lähtestamiseks järgige meilis toodud juhiseid.</target>
+      </trans-unit>
+      <trans-unit id="41" approved="yes">
+        <source>Done</source>
+        <target state="final">Valmis</target>
+      </trans-unit>
+      <trans-unit id="42" approved="yes">
+        <source>Login using SAML</source>
+        <target state="final">Logige sisse, kasutades SAML-i</target>
+      </trans-unit>
+      <trans-unit id="43" approved="yes">
+        <source>User is logged out</source>
+        <target state="final">Kasutaja on välja logitud</target>
+      </trans-unit>
+      <trans-unit id="44" approved="yes">
+        <source>Back</source>
+        <target state="final">Tagasi</target>
+      </trans-unit>
+      <trans-unit id="45" approved="yes">
+        <source>Invalid tenant ID</source>
+        <target state="final">Kehtetu rentniku ID</target>
+      </trans-unit>
+      <trans-unit id="46" approved="yes">
+        <source>All fields are required</source>
+        <target state="final">Kõik väljad on nõutavad</target>
+      </trans-unit>
+      <trans-unit id="47" approved="yes">
+        <source>Invalid credentials</source>
+        <target state="final">Kehtetud sisselogimisandmed</target>
+      </trans-unit>
+      <trans-unit id="48" approved="yes">
+        <source>Password expired</source>
+        <target state="final">Parool aegunud</target>
+      </trans-unit>
+      <trans-unit id="49" approved="yes">
+        <source>Invalid scope</source>
+        <target state="final">Kehtetu ulatus</target>
+      </trans-unit>
+      <trans-unit id="50" approved="yes">
+        <source>Authentication SAML request is not valid</source>
+        <target state="final">Autentimise SAML-i taotlus on kehtetu</target>
+      </trans-unit>
+      <trans-unit id="51" approved="yes">
+        <source>Authentication SAML response is not valid</source>
+        <target state="final">Autentimise SAML-i vastus on kehtetu</target>
+      </trans-unit>
+      <trans-unit id="52" approved="yes">
+        <source>Too many failed login attempts.</source>
+        <target state="final">Liiga palju ebaõnnestunud sisselogimiskatseid.</target>
+      </trans-unit>
+      <trans-unit id="53" approved="yes">
+        <source>Please contact the system administrator.</source>
+        <target state="final">Võtke ühendust süsteemi administraatoriga.</target>
+      </trans-unit>
+      <trans-unit id="54" approved="yes">
+        <source>You can try logging in again in</source>
+        <target state="final">Võite proovida uuesti sisse logida</target>
+      </trans-unit>
+      <trans-unit id="55" approved="yes">
+        <source>days</source>
+        <target state="final">päeva pärast</target>
+      </trans-unit>
+      <trans-unit id="56" approved="yes">
+        <source>hours</source>
+        <target state="final">tunni pärast</target>
+      </trans-unit>
+      <trans-unit id="57" approved="yes">
+        <source>minutes</source>
+        <target state="final">minuti pärast</target>
+      </trans-unit>
+      <trans-unit id="58" approved="yes">
+        <source>seconds</source>
+        <target state="final">sekundi pärast</target>
+      </trans-unit>
+      <trans-unit id="59" approved="yes">
+        <source>Private key and x509cert should be defined</source>
+        <target state="final">Tuleb määrata privaatvõti ja x509 sert</target>
+      </trans-unit>
+      <trans-unit id="60" approved="yes">
+        <source>Invalid IdP configuration</source>
+        <target state="final">Kehtetu IdP konfiguratsioon</target>
+      </trans-unit>
+      <trans-unit id="61" approved="yes">
+        <source>Invalid authentication services configuration</source>
+        <target state="final">Vale autentimisteenuste konfiguratsioon</target>
+      </trans-unit>
+      <trans-unit id="62" approved="yes">
+        <source>LDAP config option groupDn must not be empty</source>
+        <target state="final">LDAP konfiguratsiooni valik groupDn ei tohi tühi olla</target>
+      </trans-unit>
+      <trans-unit id="63" approved="yes">
+        <source>LDAP groupAttribute must not be empty</source>
+        <target state="final">LDAP groupAttribute ei tohi tühi olla</target>
+      </trans-unit>
+      <trans-unit id="64" approved="yes">
+        <source>LDAP baseDn must not be empty</source>
+        <target state="final">LDAP baseDn ei tohi tühi olla</target>
+      </trans-unit>
+      <trans-unit id="65" approved="yes">
+        <source>Consent not found</source>
+        <target state="final">Nõusolekut ei leitud</target>
+      </trans-unit>
+      <trans-unit id="66" approved="yes">
+        <source>Consent session not found</source>
+        <target state="final">Nõusolekuseanssi ei leitud</target>
+      </trans-unit>
+      <trans-unit id="67" approved="yes">
+        <source>Failed to send email for password recovery. Please try again.</source>
+        <target state="final">Meili saatmine parooli lähtestamiseks ebaõnnestus. Proovige uuesti.</target>
+      </trans-unit>
+      <trans-unit id="68" approved="yes">
+        <source>SAML is not configured for given tenant</source>
+        <target state="final">SAML-i pole antud rentniku jaoks konfigureeritud</target>
+      </trans-unit>
+      <trans-unit id="69" approved="yes">
+        <source>Invalid SAML configuration</source>
+        <target state="final">Kehtetu SAML-i konfiguratsioon</target>
+      </trans-unit>
+      <trans-unit id="70" approved="yes">
+        <source>SAML metadata validation failed:</source>
+        <target state="final">SAML-i metaandmete valideerimine nurjus:</target>
+      </trans-unit>
+      <trans-unit id="71" approved="yes">
+        <source>Invalid SAML logout data</source>
+        <target state="final">Kehtetud SAML-i väljalogimisandmed</target>
+      </trans-unit>
+      <trans-unit id="72" approved="yes">
+        <source>Required parameters missing</source>
+        <target state="final">Nõutud parameetrid puuduvad</target>
+      </trans-unit>
+      <trans-unit id="73" approved="yes">
+        <source>Invalid parameters</source>
+        <target state="final">Kehtetud parameetrid</target>
+      </trans-unit>
+      <trans-unit id="74" approved="yes">
+        <source>Password is empty</source>
+        <target state="final">Parool on tühi</target>
+      </trans-unit>
+      <trans-unit id="75" approved="yes">
+        <source>Password is too short. It should have {{ limit }} characters or more.</source>
+        <target state="final">Parool on liiga lühike. Sel peab olema vähemalt {{ limit }} tähemärki.</target>
+      </trans-unit>
+      <trans-unit id="76" approved="yes">
+        <source>Password is too long. It should have {{ limit }} characters or less.</source>
+        <target state="final">Parool on liiga pikk. Sel peab olema {{ limit }} tähemärki või vähem.</target>
+      </trans-unit>
+      <trans-unit id="77" approved="yes">
+        <source>Password should contains at least one upper-case letter</source>
+        <target state="final">Parool peab sisaldama vähemalt üht suurtähte</target>
+      </trans-unit>
+      <trans-unit id="78" approved="yes">
+        <source>Password should contains at least one lower-case letter</source>
+        <target state="final">Parool peab sisaldama vähemalt üht väiketähte</target>
+      </trans-unit>
+      <trans-unit id="79" approved="yes">
+        <source>Password should contains at least one number</source>
+        <target state="final">Parool peab sisaldama vähemalt üht numbrit</target>
+      </trans-unit>
+      <trans-unit id="80" approved="yes">
+        <source>Password should contains at least one special character</source>
+        <target state="final">Parool peab sisaldama vähemalt üht erimärki</target>
+      </trans-unit>
+      <trans-unit id="81" approved="yes">
+        <source>Password confirmation is empty</source>
+        <target state="final">Parooli kinnitus on tühi</target>
+      </trans-unit>
+      <trans-unit id="82" approved="yes">
+        <source>Password and password confirmation don't match</source>
+        <target state="final">Parool ja parooli kinnitus ei kattu</target>
+      </trans-unit>
+      <trans-unit id="83" approved="yes">
+        <source>One time token not found</source>
+        <target state="final">Ühte ajamärki ei leitud</target>
+      </trans-unit>
+      <trans-unit id="84" approved="yes">
+        <source>Tenant not found</source>
+        <target state="final">Rentnikku ei leitud</target>
+      </trans-unit>
+      <trans-unit id="85" approved="yes">
+        <source>User not found</source>
+        <target state="final">Kasutajat ei leitud</target>
+      </trans-unit>
+      <trans-unit id="86" approved="yes">
+        <source>View</source>
+        <target state="final">Kuva</target>
+      </trans-unit>
+      <trans-unit id="87" approved="yes">
+        <source>email</source>
+        <target state="final">meil</target>
+      </trans-unit>
+      <trans-unit id="88" approved="yes">
+        <source>address</source>
+        <target state="final">aadress</target>
+      </trans-unit>
+      <trans-unit id="89" approved="yes">
+        <source>phone number</source>
+        <target state="final">telefoninumber</target>
+      </trans-unit>
+      <trans-unit id="90" approved="yes">
+        <source>Access all the above information at any time</source>
+        <target state="final">Ligipääs kogu ülaltoodud teabele igal ajal</target>
+      </trans-unit>
+      <trans-unit id="91" approved="yes">
+        <source>View your Sugar profile which includes first and last name</source>
+        <target state="final">Vaadake oma Sugari profiili, mis sisaldab ees- ja perekonnanime</target>
+      </trans-unit>
+      <trans-unit id="92" approved="yes">
+        <source>Authenticate using OpenID Connect</source>
+        <target state="final">Autentimine OpenID Connecti abil</target>
+      </trans-unit>
+      <trans-unit id="93" approved="yes">
+        <source>View and update any Sugar data (Accounts, Contacts, Leads, etc.) that you are permitted to access</source>
+        <target state="final">Vaadake ja värskendage Sugari andmeid (kontod, kontaktid, kliendid jne), millele teil on juurdepääs</target>
+      </trans-unit>
+      <trans-unit id="94" approved="yes">
+        <source>View and manage your Identity and Access Management (IAM) objects</source>
+        <target state="final">Vaadake ja hallake oma identiteedi ja ligipääsuhalduse (IAM) objekte</target>
+      </trans-unit>
+      <trans-unit id="95" approved="yes">
+        <source>Only authorized users can change password</source>
+        <target state="final">Parooli saavad muuta ainult autoriseeritud kasutajad</target>
+      </trans-unit>
+      <trans-unit id="96" approved="yes">
+        <source>Only local users can change password</source>
+        <target state="final">Parooli saavad muuta ainult kohalikud kasutajad</target>
+      </trans-unit>
+      <trans-unit id="97" approved="yes">
+        <source>Change your password</source>
+        <target state="final">Muutke oma parooli</target>
+      </trans-unit>
+      <trans-unit id="98" approved="yes">
+        <source>Please enter your old password and choose a new password.</source>
+        <target state="final">Sisestage oma vana parool ja valige uus parool.</target>
+      </trans-unit>
+      <trans-unit id="99" approved="yes">
+        <source>Old password</source>
+        <target state="final">Vana parool</target>
+      </trans-unit>
+      <trans-unit id="100" approved="yes">
+        <source>Old password is empty</source>
+        <target state="final">Vana parool on tühi</target>
+      </trans-unit>
+      <trans-unit id="101" approved="yes">
+        <source>Old password is not valid</source>
+        <target state="final">Vana parool on kehtetu</target>
+      </trans-unit>
+      <trans-unit id="102" approved="yes">
+        <source>No user is found</source>
+        <target state="final">Kasutajat ei leitud</target>
+      </trans-unit>
+      <trans-unit id="103" approved="yes">
+        <source>Password changed successful</source>
+        <target state="final">Parool edukalt muudetud</target>
+      </trans-unit>
+      <trans-unit id="104" approved="yes">
+        <source>Continue</source>
+        <target state="final">Jätka</target>
+      </trans-unit>
+      <trans-unit id="105" approved="yes">
+        <source>Tenant isn't active</source>
+        <target state="final">Rentnik pole aktiivne</target>
+      </trans-unit>
+      <trans-unit id="106" approved="yes">
+        <source>New password must be different from previous password</source>
+        <target state="final">Uus parool peab olema eelmisest paroolist erinev</target>
+      </trans-unit>
+      <trans-unit id="107" approved="yes">
+        <source>Show log in form</source>
+        <target state="final">Kuva sisselogimisvorm</target>
+      </trans-unit>
+      <trans-unit id="108" approved="yes">
+        <source>Tenant ID</source>
+        <target state="final">Rentniku ID</target>
+      </trans-unit>
+      <trans-unit id="109" approved="yes">
+        <source>Next</source>
+        <target state="final">Järgmine</target>
+      </trans-unit>
+      <trans-unit id="110" approved="yes">
+        <source>Please proceed with caution and only allow access if you are logging in to "%client%".</source>
+        <target state="final">Jätkake ettevaatlikult ja lubage ligipääs ainult siis, kui olete sisse loginud: „%client%“.</target>
+      </trans-unit>
+      <trans-unit id="111" approved="yes">
+        <source>Learn about how %client% will handle your Sugar data by reviewing the %termsLink%Terms of Use%endlink% and %privacyLink%Privacy policies%endlink%.</source>
+        <target state="final">Lisateavet selle kohta, kuidas %client% haldab teie Sugari andmeid, leiate %termsLink%Kasutustingimustest%endlink% ja %pivacyLink%Privaatsuspoliitikast%endlink%.</target>
+      </trans-unit>
+      <trans-unit id="112" approved="yes">
+        <source>You are about to authorize the application "%client%" to act on behalf of your users using the following permissions:</source>
+        <target state="final">Olete autoriseerimas rakendust „%client%“ tegutsema oma kasutajate nimel, kasutades järgmisi õigusi:</target>
+      </trans-unit>
+      <trans-unit id="113" approved="yes">
+        <source>You are about to authorize of application "%client%" to act on behalf of your users.</source>
+        <target state="final">Olete autoriseerimas rakendust „%client%“ tegutsema oma kasutajate nimel.</target>
+      </trans-unit>
+      <trans-unit id="114" approved="yes">
+        <source>Remove access for application</source>
+        <target state="final">Eemalda ligipääs rakendusele</target>
+      </trans-unit>
+      <trans-unit id="115" approved="yes">
+        <source>You are about to remove authorization for the application  "%client%" to act on behalf of your users.</source>
+        <target state="final">Olete eemaldamas volitust rakenduselt „%client%“ tegutsemast oma kasutajate nimel.</target>
+      </trans-unit>
+      <trans-unit id="116" approved="yes">
+        <source>You are about to remove authorization of application "%client%" to act on behalf of your users with the following permissions:</source>
+        <target state="final">Olete eemaldamas volitust rakenduselt „%client%“ tegutsemast oma kasutajate nimel, kasutades järgmisi õigusi:</target>
+      </trans-unit>
+      <trans-unit id="117" approved="yes">
+        <source>Do you want to remove this access?</source>
+        <target state="final">Kas soovite selle ligipääsu eemaldada?</target>
+      </trans-unit>
+      <trans-unit id="118" approved="yes">
+        <source>Remove access</source>
+        <target state="final">Eemalda ligipääs</target>
+      </trans-unit>
+      <trans-unit id="119" approved="yes">
+        <source>Authorize access for application</source>
+        <target state="final">Autoriseeri ligipääs rakendusele</target>
+      </trans-unit>
+      <trans-unit id="120" approved="yes">
+        <source>User account is disabled</source>
+        <target state="final">Kasutaja konto on keelatud</target>
+      </trans-unit>
+      <trans-unit id="121" approved="yes">
+        <source>Did not find tenant?</source>
+        <target state="final">Kas ei leidnud rentnikku?</target>
+      </trans-unit>
+      <trans-unit id="122" approved="yes">
+        <source>Continue with</source>
+        <target state="final">Jätka järgmisega</target>
+      </trans-unit>
+      <trans-unit id="123" approved="yes">
+        <source>Log into another tenant</source>
+        <target state="final">Logi sisse teise rentnikku</target>
+      </trans-unit>
+      <trans-unit id="124" approved="yes">
+        <source>logged out</source>
+        <target state="final">väljalogitud</target>
+      </trans-unit>
+      <trans-unit id="125" approved="yes">
+        <source>Welcome to</source>
+        <target state="final">Tere tulemast</target>
+      </trans-unit>
+      <trans-unit id="126" approved="yes">
+        <source>Minimum length = %minimum_length%</source>
+        <target state="final">Miinimumpikkus = %minimum_length%</target>
+      </trans-unit>
+      <trans-unit id="127" approved="yes">
+        <source>Maximum length = %maximum_length%</source>
+        <target state="final">Maksimumpikkus = %maximum_length%</target>
+      </trans-unit>
+      <trans-unit id="128" approved="yes">
+        <source>Must contain one upper case letter (A-Z)</source>
+        <target state="final">Peab sisaldama üht suurtähte (A–Z)</target>
+      </trans-unit>
+      <trans-unit id="129" approved="yes">
+        <source>Must contain one lower case letter (a-z)</source>
+        <target state="final">Peab sisaldama üht väiketähte (A–Z)</target>
+      </trans-unit>
+      <trans-unit id="130" approved="yes">
+        <source>Must contain one number (0-9)</source>
+        <target state="final">Peab sisaldama üht numbrit (0–9)</target>
+      </trans-unit>
+      <trans-unit id="131" approved="yes">
+        <source>Must contain one special character (~!@#$%^&amp;*()_+-={}|)</source>
+        <target state="final">Peab sisaldama üht erimärki (~!@#$%^&amp;*()_+-={}|)</target>
+      </trans-unit>
+      <trans-unit id="132" approved="yes">
+        <source>Password requirements:</source>
+        <target state="final">Parooli nõuded:</target>
+      </trans-unit>
+      <trans-unit id="133" approved="yes">
+        <source>The password you entered does not meet the password requirements.</source>
+        <target state="final">Sisestatud parool ei vasta parooli nõuetele.</target>
+      </trans-unit>
+      <trans-unit id="134" approved="yes">
+        <source>We could not find your account with that User Name. Please double-check and try again.</source>
+        <target state="final">Teie kontot selle kasutajanimega ei leitud. Kontrollige ja proovige uuesti.</target>
+      </trans-unit>
+      <trans-unit id="135" approved="yes">
+        <source>You have opened a one-time password reset link that has either been used or is no longer valid. Please request a new one using the form below.</source>
+        <target state="final">Olete avanud ühekordse parooli lähtestamise lingi, mida on kas kasutatud või mis ei kehti enam. Taotlege uut, kasutades allolevat vormi.</target>
+      </trans-unit>
+      <trans-unit id="136">
+        <source>New passwords do not match.</source>
+        <target state="needs-translation">New passwords do not match.</target>
+      </trans-unit>
+      <trans-unit id="137">
+        <source>Cannot change the password now. Try again later.</source>
+        <target state="needs-translation">Cannot change the password now. Try again later.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

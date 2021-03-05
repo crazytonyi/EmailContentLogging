@@ -1,0 +1,70 @@
+{#
+/*
+ * Your installation or use of this SugarCRM file is subject to the applicable
+ * terms available at
+ * http://support.sugarcrm.com/Resources/Master_Subscription_Agreements/.
+ * If you do not agree to all of the applicable terms or do not have the
+ * authority to bind the entity as an authorized representative, then do not
+ * install or use this SugarCRM file.
+ *
+ * Copyright (C) SugarCRM Inc. All rights reserved.
+ */
+#}
+{% set isMarketing = true %}
+{% extends "index-with-alerts.html.twig" %}
+
+{% set currentParams = app.request_stack.currentrequest.query.all %}
+
+{% block content %}
+<div class="thumbnail login">
+    <div class="tcenter">
+        {% include 'logo-sugar.html.twig' %}
+        <div class="login-header">
+            <h4>{{ 'Continue with'|trans }}</h4>
+        </div>
+    </div>
+    <form name="login" id="submit_section" class="tcenter" method="post" action="{{ path('userSelectionProcess') }}">
+        <ul class="list-group" id="user-selection-list">
+            {% for info in tokensInfo %}
+                {% set tenant = tenant(info.tenantID) %}
+                {% set tenantName = info.tenantID %}
+                {% if tenant is not null and tenant.DisplayName != "" %}
+                    {% set tenantName = tenant.DisplayName %}
+                {% endif %}
+                <li class="list-group-item"
+                    data-tid={{ info.tenantID }}
+                    data-username={{ info.userName }}
+                    data-user-srn={{ info.userSrn }}>
+                    <p class="user" title="{{ info.userName }}">
+                        {{ info.name }}
+                        {% if not info.loggedIn %}
+                            <span class="login-status">{{'logged out'|trans}}</span>
+                        {% endif %}
+                    </p>
+                    <p class="tenant">{{ tenantName }}</p>
+                    <p class="tenant"><i>{{ info.tenantID }}</i></p>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="login-footer">
+            {% if currentParams['tenant_hint'] is defined %}
+                <a href="{{ path('loginRender', {new_login: 1, tenant_hint: currentParams['tenant_hint']}) }}"
+                    class="btn btn-link btn-invisible btn-help">{{ 'Show log in form'|trans }}</a>
+            {% else %}
+                <a href="{{ path('loginRender', {new_login: 1}) }}"
+                   class="btn btn-link btn-invisible btn-help">{{ 'Log into another tenant'|trans }}</a>
+            {% endif %}
+            <p>&nbsp;</p>
+        </div>
+        {# Values that we populate on click from currently selected list item #}
+        <input type="hidden" name="tid" value="">
+        <input type="hidden" name="user_srn" value="">
+        <input type="hidden" name="user_name" value="">
+        {# Pre-populated form values #}
+        <input type="hidden" id="csrf_token" name="csrf_token" value="{{ csrf_token }}">
+    </form>
+</div>
+{% endblock %}
+{% block marketing %}
+    {% include 'marketing.html.twig' %}
+{% endblock %}

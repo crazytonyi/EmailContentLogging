@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-US" datatype="plaintext" original="en.xlf" target-language="lv">
+    <body>
+      <trans-unit id="1" approved="yes">
+        <source>Tenant</source>
+        <target state="final">Nomnieks</target>
+      </trans-unit>
+      <trans-unit id="2" approved="yes">
+        <source>User Name</source>
+        <target state="final">Lietotāja vārds</target>
+      </trans-unit>
+      <trans-unit id="3" approved="yes">
+        <source>Password</source>
+        <target state="final">Parole</target>
+      </trans-unit>
+      <trans-unit id="4" approved="yes">
+        <source>Forgot Password?</source>
+        <target state="final">Aizmirsāt paroli?</target>
+      </trans-unit>
+      <trans-unit id="5" approved="yes">
+        <source>Log In</source>
+        <target state="final">Pierakstīties</target>
+      </trans-unit>
+      <trans-unit id="6" approved="yes">
+        <source>Log out</source>
+        <target state="final">Izrakstīties</target>
+      </trans-unit>
+      <trans-unit id="7" approved="yes">
+        <source>Single Sign-On</source>
+        <target state="final">Vienreizēja pieteikšanās</target>
+      </trans-unit>
+      <trans-unit id="8" approved="yes">
+        <source>You are logged in as %user_name%</source>
+        <target state="final">Jūs pierakstījāties kā %user_name%</target>
+      </trans-unit>
+      <trans-unit id="9" approved="yes">
+        <source>Your tenant id is %tenant%</source>
+        <target state="final">Jūsu nomnieka ID ir %tenant%</target>
+      </trans-unit>
+      <trans-unit id="10" approved="yes">
+        <source>Authentication provider - %provider%</source>
+        <target state="final">Autentifikācijas pakalpojuma sniedzējs – %provider%</target>
+      </trans-unit>
+      <trans-unit id="11" approved="yes">
+        <source>Application not verified</source>
+        <target state="final">Pieteikums nav pārbaudīts</target>
+      </trans-unit>
+      <trans-unit id="12" approved="yes">
+        <source>This app hasn't been verified by SugarCRM admin yet and confirmed it's authentic.</source>
+        <target state="final">Šo lietotni SugarCRM administrators pagaidām nav pārbaudījis un nav apstiprinājis tās autentiskumu.</target>
+      </trans-unit>
+      <trans-unit id="13" approved="yes">
+        <source>Unverified apps may pose a threat to your personal data.</source>
+        <target state="final">Nepārbaudītas lietotnes var radīt apdraudējumu jūsu personas datiem.</target>
+      </trans-unit>
+      <trans-unit id="14" approved="yes">
+        <source>Back to Safety</source>
+        <target state="final">Atpakaļ uz drošību</target>
+      </trans-unit>
+      <trans-unit id="15" approved="yes">
+        <source>Application is requesting access</source>
+        <target state="final">Lietotne pieprasa piekļuvi</target>
+      </trans-unit>
+      <trans-unit id="16" approved="yes">
+        <source>"%client%" is requesting access.</source>
+        <target state="final">"%client%" pieprasa piekļuvi.</target>
+      </trans-unit>
+      <trans-unit id="17" approved="yes">
+        <source>"%client%" is requesting access to use your Sugar account to:</source>
+        <target state="final">"%client%" pieprasa piekļuvi, lai izmantotu jūsu Sugar kontu:</target>
+      </trans-unit>
+      <trans-unit id="18" approved="yes">
+        <source>Do you want to allow this access?</source>
+        <target state="final">Vai vēlaties atļaut šādu piekļuvi?</target>
+      </trans-unit>
+      <trans-unit id="19" approved="yes">
+        <source>No, Thanks</source>
+        <target state="final">Nē, paldies</target>
+      </trans-unit>
+      <trans-unit id="20" approved="yes">
+        <source>Allow access</source>
+        <target state="final">Atļaut piekļuvi</target>
+      </trans-unit>
+      <trans-unit id="21" approved="yes">
+        <source>Sorry, service is not able to process the request.</source>
+        <target state="final">Diemžēl pakalpojums nevar apstrādāt pieprasījumu.</target>
+      </trans-unit>
+      <trans-unit id="22" approved="yes">
+        <source>error</source>
+        <target state="final">kļūda</target>
+      </trans-unit>
+      <trans-unit id="25" approved="yes">
+        <source>Enter your user name below to receive the password reset instructions.</source>
+        <target state="final">Ievadet zemāk lietotāja vārdu, lai saņemtu norādījumus par paroles atiestatīšanu.</target>
+      </trans-unit>
+      <trans-unit id="26" approved="yes">
+        <source>Required</source>
+        <target state="final">Nepieciešams</target>
+      </trans-unit>
+      <trans-unit id="27" approved="yes">
+        <source>Cancel</source>
+        <target state="final">Atcelt</target>
+      </trans-unit>
+      <trans-unit id="28" approved="yes">
+        <source>Send</source>
+        <target state="final">Sūtīt</target>
+      </trans-unit>
+      <trans-unit id="29" approved="yes">
+        <source>Reset your password</source>
+        <target state="final">Atiestatiet savu paroli</target>
+      </trans-unit>
+      <trans-unit id="30" approved="yes">
+        <source>Please choose a new password to finish log in.</source>
+        <target state="final">Lūdzu, izvēlieties jaunu paroli, lai pabeigtu pierakstīšanos.</target>
+      </trans-unit>
+      <trans-unit id="31" approved="yes">
+        <source>Read some tips on %link%creating a secure password.%endlink%</source>
+        <target state="final">Izlasiet padomus %link%par drošas paroles izveidi.%endlink%</target>
+      </trans-unit>
+      <trans-unit id="32" approved="yes">
+        <source>New password</source>
+        <target state="final">Jauna parole</target>
+      </trans-unit>
+      <trans-unit id="33" approved="yes">
+        <source>Confirm password</source>
+        <target state="final">Apstiprināt paroli</target>
+      </trans-unit>
+      <trans-unit id="34" approved="yes">
+        <source>Change password</source>
+        <target state="final">Mainīt paroli</target>
+      </trans-unit>
+      <trans-unit id="35" approved="yes">
+        <source>Password reset successful</source>
+        <target state="final">Paroles atiestatīšana veiksmīga</target>
+      </trans-unit>
+      <trans-unit id="36" approved="yes">
+        <source>Awesome, you've successfully updated your password.</source>
+        <target state="final">Lieliski, jūs veiksmīgi atjauninājāt savu paroli.</target>
+      </trans-unit>
+      <trans-unit id="37" approved="yes">
+        <source>Now you can log in and check if %link%your profile%endlink% is correct.</source>
+        <target state="final">Tagad varat pierakstīies un pārbaudīt, vai %link%jūsu profils%endlink% ir pareizs.</target>
+      </trans-unit>
+      <trans-unit id="38" approved="yes">
+        <source>Password reset email sent</source>
+        <target state="final">Nosūtīs paroles atiestatīšanas e-pasts</target>
+      </trans-unit>
+      <trans-unit id="39" approved="yes">
+        <source>An email has been sent to following address %emailaddress%.</source>
+        <target state="final">E-pasts ir nosūtīts uz šādu %emailaddress%.</target>
+      </trans-unit>
+      <trans-unit id="40" approved="yes">
+        <source>Follow the directions in the email to reset your password.</source>
+        <target state="final">Lai atiestatītu paroli, izpildiet e-pastā sniegtos norādījumus.</target>
+      </trans-unit>
+      <trans-unit id="41" approved="yes">
+        <source>Done</source>
+        <target state="final">Gatavs</target>
+      </trans-unit>
+      <trans-unit id="42" approved="yes">
+        <source>Login using SAML</source>
+        <target state="final">Pierakstīties, izmantojot SAML</target>
+      </trans-unit>
+      <trans-unit id="43" approved="yes">
+        <source>User is logged out</source>
+        <target state="final">Lietotājs ir izrakstījies</target>
+      </trans-unit>
+      <trans-unit id="44" approved="yes">
+        <source>Back</source>
+        <target state="final">Atpakaļ</target>
+      </trans-unit>
+      <trans-unit id="45" approved="yes">
+        <source>Invalid tenant ID</source>
+        <target state="final">Nederīgs nomnieka ID</target>
+      </trans-unit>
+      <trans-unit id="46" approved="yes">
+        <source>All fields are required</source>
+        <target state="final">Jāaizpilda visi lauki</target>
+      </trans-unit>
+      <trans-unit id="47" approved="yes">
+        <source>Invalid credentials</source>
+        <target state="final">Nederīga pierakstīšanās informācija</target>
+      </trans-unit>
+      <trans-unit id="48" approved="yes">
+        <source>Password expired</source>
+        <target state="final">Paroles termiņš ir beidzies</target>
+      </trans-unit>
+      <trans-unit id="49" approved="yes">
+        <source>Invalid scope</source>
+        <target state="final">Nederīgs tvērums</target>
+      </trans-unit>
+      <trans-unit id="50" approved="yes">
+        <source>Authentication SAML request is not valid</source>
+        <target state="final">SAML autentifikācijas pieprasījums nav derīgs</target>
+      </trans-unit>
+      <trans-unit id="51" approved="yes">
+        <source>Authentication SAML response is not valid</source>
+        <target state="final">SAML autentifikācijas atbilde nav derīga</target>
+      </trans-unit>
+      <trans-unit id="52" approved="yes">
+        <source>Too many failed login attempts.</source>
+        <target state="final">Pārāk daudz neveiksmīgu pierakstīšanās mēģinājumu.</target>
+      </trans-unit>
+      <trans-unit id="53" approved="yes">
+        <source>Please contact the system administrator.</source>
+        <target state="final">Sazinieties ar sistēmas administratoru.</target>
+      </trans-unit>
+      <trans-unit id="54" approved="yes">
+        <source>You can try logging in again in</source>
+        <target state="final">Varat mēģināt pierakstīties vēlreiz pēc</target>
+      </trans-unit>
+      <trans-unit id="55" approved="yes">
+        <source>days</source>
+        <target state="final">dienām</target>
+      </trans-unit>
+      <trans-unit id="56" approved="yes">
+        <source>hours</source>
+        <target state="final">stundām</target>
+      </trans-unit>
+      <trans-unit id="57" approved="yes">
+        <source>minutes</source>
+        <target state="final">minūtēm</target>
+      </trans-unit>
+      <trans-unit id="58" approved="yes">
+        <source>seconds</source>
+        <target state="final">sekundēm</target>
+      </trans-unit>
+      <trans-unit id="59" approved="yes">
+        <source>Private key and x509cert should be defined</source>
+        <target state="final">Ir jānosaka privātā atslēga un x509cert</target>
+      </trans-unit>
+      <trans-unit id="60" approved="yes">
+        <source>Invalid IdP configuration</source>
+        <target state="final">Nederīga IdP konfigurācija</target>
+      </trans-unit>
+      <trans-unit id="61" approved="yes">
+        <source>Invalid authentication services configuration</source>
+        <target state="final">Nederīga autentifikācijas pakalpojumu konfigurācija</target>
+      </trans-unit>
+      <trans-unit id="62" approved="yes">
+        <source>LDAP config option groupDn must not be empty</source>
+        <target state="final">LDAP konfigurācijas opcija groupDn nedrīkst būt tukša</target>
+      </trans-unit>
+      <trans-unit id="63" approved="yes">
+        <source>LDAP groupAttribute must not be empty</source>
+        <target state="final">LDAP grupas atribūts nedrīkst būt tukšs</target>
+      </trans-unit>
+      <trans-unit id="64" approved="yes">
+        <source>LDAP baseDn must not be empty</source>
+        <target state="final">LDAP baseDn nedrīkst būt tukšs</target>
+      </trans-unit>
+      <trans-unit id="65" approved="yes">
+        <source>Consent not found</source>
+        <target state="final">Piekrišana nav atrasta</target>
+      </trans-unit>
+      <trans-unit id="66" approved="yes">
+        <source>Consent session not found</source>
+        <target state="final">Piekrišanas sesija nav atrasta</target>
+      </trans-unit>
+      <trans-unit id="67" approved="yes">
+        <source>Failed to send email for password recovery. Please try again.</source>
+        <target state="final">Neizdevās nosūtīt paroles atgūšanas e-pastu. Lūdzu, mēģiniet vēlreiz.</target>
+      </trans-unit>
+      <trans-unit id="68" approved="yes">
+        <source>SAML is not configured for given tenant</source>
+        <target state="final">SAML nav konfigurēts norādītajam nomniekam</target>
+      </trans-unit>
+      <trans-unit id="69" approved="yes">
+        <source>Invalid SAML configuration</source>
+        <target state="final">Nederīga SAML konfigurācija</target>
+      </trans-unit>
+      <trans-unit id="70" approved="yes">
+        <source>SAML metadata validation failed:</source>
+        <target state="final">SAML metadatu validācija neizdevās:</target>
+      </trans-unit>
+      <trans-unit id="71" approved="yes">
+        <source>Invalid SAML logout data</source>
+        <target state="final">Nederīgi SAML izrakstīšanās dati</target>
+      </trans-unit>
+      <trans-unit id="72" approved="yes">
+        <source>Required parameters missing</source>
+        <target state="final">Trūkst nepieciešamo parametru</target>
+      </trans-unit>
+      <trans-unit id="73" approved="yes">
+        <source>Invalid parameters</source>
+        <target state="final">Nederīgi parametri</target>
+      </trans-unit>
+      <trans-unit id="74" approved="yes">
+        <source>Password is empty</source>
+        <target state="final">Parole ir tukša</target>
+      </trans-unit>
+      <trans-unit id="75" approved="yes">
+        <source>Password is too short. It should have {{ limit }} characters or more.</source>
+        <target state="final">Parole ir pārāk īsa. Tajā ir jābūt {{ limit }} simboliem vai vairāk.</target>
+      </trans-unit>
+      <trans-unit id="76" approved="yes">
+        <source>Password is too long. It should have {{ limit }} characters or less.</source>
+        <target state="final">Parole ir pārāk gara. Tajā ir jābūt {{ limit }} simboliem vai mazāk.</target>
+      </trans-unit>
+      <trans-unit id="77" approved="yes">
+        <source>Password should contains at least one upper-case letter</source>
+        <target state="final">Parolē ir jābūt vismaz vienam lielajam burtam</target>
+      </trans-unit>
+      <trans-unit id="78" approved="yes">
+        <source>Password should contains at least one lower-case letter</source>
+        <target state="final">Parolē ir jābūt vismaz vienam mazajam burtam</target>
+      </trans-unit>
+      <trans-unit id="79" approved="yes">
+        <source>Password should contains at least one number</source>
+        <target state="final">Parolē ir jābūt vismaz vienam ciparam</target>
+      </trans-unit>
+      <trans-unit id="80" approved="yes">
+        <source>Password should contains at least one special character</source>
+        <target state="final">Parolē ir jābūt vismaz vienam speciālajam simbolam</target>
+      </trans-unit>
+      <trans-unit id="81" approved="yes">
+        <source>Password confirmation is empty</source>
+        <target state="final">Paroles apstiprinājums ir tukšs</target>
+      </trans-unit>
+      <trans-unit id="82" approved="yes">
+        <source>Password and password confirmation don't match</source>
+        <target state="final">Parole un paroles apstiprinājums nesakrīt</target>
+      </trans-unit>
+      <trans-unit id="83" approved="yes">
+        <source>One time token not found</source>
+        <target state="final">Vienreizējais marķieris nav atrasts</target>
+      </trans-unit>
+      <trans-unit id="84" approved="yes">
+        <source>Tenant not found</source>
+        <target state="final">Nomnieks nav atrasts</target>
+      </trans-unit>
+      <trans-unit id="85" approved="yes">
+        <source>User not found</source>
+        <target state="final">Lietotājs nav atrasts</target>
+      </trans-unit>
+      <trans-unit id="86" approved="yes">
+        <source>View</source>
+        <target state="final">Skats</target>
+      </trans-unit>
+      <trans-unit id="87" approved="yes">
+        <source>email</source>
+        <target state="final">e-pasts</target>
+      </trans-unit>
+      <trans-unit id="88" approved="yes">
+        <source>address</source>
+        <target state="final">adrese</target>
+      </trans-unit>
+      <trans-unit id="89" approved="yes">
+        <source>phone number</source>
+        <target state="final">tālruņa numurs</target>
+      </trans-unit>
+      <trans-unit id="90" approved="yes">
+        <source>Access all the above information at any time</source>
+        <target state="final">Piekļūt jebkurā brīdī visai iepriekš norādītajai informācijai</target>
+      </trans-unit>
+      <trans-unit id="91" approved="yes">
+        <source>View your Sugar profile which includes first and last name</source>
+        <target state="final">Apskatiet savu Sugar profilu, kurā ir norādīts vārds un uzvārds</target>
+      </trans-unit>
+      <trans-unit id="92" approved="yes">
+        <source>Authenticate using OpenID Connect</source>
+        <target state="final">Autentificējieties, izmantojot OpenID Connect</target>
+      </trans-unit>
+      <trans-unit id="93" approved="yes">
+        <source>View and update any Sugar data (Accounts, Contacts, Leads, etc.) that you are permitted to access</source>
+        <target state="final">Skatīt un atjaunināt jebkādus Sugar datus (uzņēmumi, kontaktpersonas, interesenti utt.), kuriem jums ir atļauts piekļūt</target>
+      </trans-unit>
+      <trans-unit id="94" approved="yes">
+        <source>View and manage your Identity and Access Management (IAM) objects</source>
+        <target state="final">Skatīt un pārvaldīt identitātes un piekļuves pārvaldības (IAM) objektus</target>
+      </trans-unit>
+      <trans-unit id="95" approved="yes">
+        <source>Only authorized users can change password</source>
+        <target state="final">Tikai autorizēti lietotāji var mainīt paroli</target>
+      </trans-unit>
+      <trans-unit id="96" approved="yes">
+        <source>Only local users can change password</source>
+        <target state="final">Tikai vietējie lietotāji var mainīt paroli</target>
+      </trans-unit>
+      <trans-unit id="97" approved="yes">
+        <source>Change your password</source>
+        <target state="final">Mainīt savu paroli</target>
+      </trans-unit>
+      <trans-unit id="98" approved="yes">
+        <source>Please enter your old password and choose a new password.</source>
+        <target state="final">Lūdzu, ievadiet savu veco paroli un izvēlieties jaunu paroli.</target>
+      </trans-unit>
+      <trans-unit id="99" approved="yes">
+        <source>Old password</source>
+        <target state="final">Vecā parole</target>
+      </trans-unit>
+      <trans-unit id="100" approved="yes">
+        <source>Old password is empty</source>
+        <target state="final">Vecā parole ir tukša</target>
+      </trans-unit>
+      <trans-unit id="101" approved="yes">
+        <source>Old password is not valid</source>
+        <target state="final">Vecā parole nav derīga</target>
+      </trans-unit>
+      <trans-unit id="102" approved="yes">
+        <source>No user is found</source>
+        <target state="final">Nav atrasts neviens lietotājs</target>
+      </trans-unit>
+      <trans-unit id="103" approved="yes">
+        <source>Password changed successful</source>
+        <target state="final">Parole ir veiksmīgi nomainīta</target>
+      </trans-unit>
+      <trans-unit id="104" approved="yes">
+        <source>Continue</source>
+        <target state="final">Turpināt</target>
+      </trans-unit>
+      <trans-unit id="105" approved="yes">
+        <source>Tenant isn't active</source>
+        <target state="final">Nomnieks nav aktīvs</target>
+      </trans-unit>
+      <trans-unit id="106" approved="yes">
+        <source>New password must be different from previous password</source>
+        <target state="final">Jaunajai parolei ir jāatšķiras no iepriekšējās</target>
+      </trans-unit>
+      <trans-unit id="107" approved="yes">
+        <source>Show log in form</source>
+        <target state="final">Parādīt pierakstīšanās veidlapu</target>
+      </trans-unit>
+      <trans-unit id="108" approved="yes">
+        <source>Tenant ID</source>
+        <target state="final">Nomnieka ID</target>
+      </trans-unit>
+      <trans-unit id="109" approved="yes">
+        <source>Next</source>
+        <target state="final">Tālāk</target>
+      </trans-unit>
+      <trans-unit id="110" approved="yes">
+        <source>Please proceed with caution and only allow access if you are logging in to "%client%".</source>
+        <target state="final">Rīkojieties piesardzīgi un atļaujiet piekļuvi tikai tad, ja pierakstāties kā "%client%".</target>
+      </trans-unit>
+      <trans-unit id="111" approved="yes">
+        <source>Learn about how %client% will handle your Sugar data by reviewing the %termsLink%Terms of Use%endlink% and %privacyLink%Privacy policies%endlink%.</source>
+        <target state="final">Uzziniet, kā %client% rīkosies ar jūsu Sugar datiem, apskatot %termsLink%Lietošanas noteikumus%endlink% un %privacyLink%Privātuma politiku%endlink%.</target>
+      </trans-unit>
+      <trans-unit id="112" approved="yes">
+        <source>You are about to authorize the application "%client%" to act on behalf of your users using the following permissions:</source>
+        <target state="final">Jūs grasāties atļaut lietotnei "%client%" rīkoties jūsu lietotāju vārdā, izmantojot šādas atļaujas:</target>
+      </trans-unit>
+      <trans-unit id="113" approved="yes">
+        <source>You are about to authorize of application "%client%" to act on behalf of your users.</source>
+        <target state="final">Jūs grasāties atļaut lietotnei "%client%" rīkoties jūsu lietotāju vārdā.</target>
+      </trans-unit>
+      <trans-unit id="114" approved="yes">
+        <source>Remove access for application</source>
+        <target state="final">Liegt piekļuvi lietotnei</target>
+      </trans-unit>
+      <trans-unit id="115" approved="yes">
+        <source>You are about to remove authorization for the application  "%client%" to act on behalf of your users.</source>
+        <target state="final">Jūs grasāties liegt lietotnei "%client%" atļauju rīkoties jūsu lietotāju vārdā.</target>
+      </trans-unit>
+      <trans-unit id="116" approved="yes">
+        <source>You are about to remove authorization of application "%client%" to act on behalf of your users with the following permissions:</source>
+        <target state="final">Jūs grasāties liegt lietotnei "%client%" atļauju rīkoties jūsu lietotāju vārdā, izmantojot šādas atļaujas:</target>
+      </trans-unit>
+      <trans-unit id="117" approved="yes">
+        <source>Do you want to remove this access?</source>
+        <target state="final">Vai vēlaties liegt šo piekļuvi?</target>
+      </trans-unit>
+      <trans-unit id="118" approved="yes">
+        <source>Remove access</source>
+        <target state="final">Noņemt piekļuvi</target>
+      </trans-unit>
+      <trans-unit id="119" approved="yes">
+        <source>Authorize access for application</source>
+        <target state="final">Atļaut piekļuvi lietotnei</target>
+      </trans-unit>
+      <trans-unit id="120" approved="yes">
+        <source>User account is disabled</source>
+        <target state="final">Lietotāja konts ir atspējots</target>
+      </trans-unit>
+      <trans-unit id="121" approved="yes">
+        <source>Did not find tenant?</source>
+        <target state="final">Vai neatradāt nomnieku?</target>
+      </trans-unit>
+      <trans-unit id="122" approved="yes">
+        <source>Continue with</source>
+        <target state="final">Turpināt ar</target>
+      </trans-unit>
+      <trans-unit id="123" approved="yes">
+        <source>Log into another tenant</source>
+        <target state="final">Pierakstīties kā citam nomniekam</target>
+      </trans-unit>
+      <trans-unit id="124" approved="yes">
+        <source>logged out</source>
+        <target state="final">izrakstījies</target>
+      </trans-unit>
+      <trans-unit id="125" approved="yes">
+        <source>Welcome to</source>
+        <target state="final">Laipni lūdzam</target>
+      </trans-unit>
+      <trans-unit id="126" approved="yes">
+        <source>Minimum length = %minimum_length%</source>
+        <target state="final">Minimālais garums = %minimum_length%</target>
+      </trans-unit>
+      <trans-unit id="127" approved="yes">
+        <source>Maximum length = %maximum_length%</source>
+        <target state="final">Maksimālais garums = %maximum_length%</target>
+      </trans-unit>
+      <trans-unit id="128" approved="yes">
+        <source>Must contain one upper case letter (A-Z)</source>
+        <target state="final">Jāsatur viens lielais burts (A-Z)</target>
+      </trans-unit>
+      <trans-unit id="129" approved="yes">
+        <source>Must contain one lower case letter (a-z)</source>
+        <target state="final">Jāsatur viens mazais burts (a-z)</target>
+      </trans-unit>
+      <trans-unit id="130" approved="yes">
+        <source>Must contain one number (0-9)</source>
+        <target state="final">Jāsatur viens cipars (0-9)</target>
+      </trans-unit>
+      <trans-unit id="131" approved="yes">
+        <source>Must contain one special character (~!@#$%^&amp;*()_+-={}|)</source>
+        <target state="final">Jāsatur viens speciālais simbols (~!@#$%^&amp;*()_+-={}|)</target>
+      </trans-unit>
+      <trans-unit id="132" approved="yes">
+        <source>Password requirements:</source>
+        <target state="final">Paroles prasības:</target>
+      </trans-unit>
+      <trans-unit id="133" approved="yes">
+        <source>The password you entered does not meet the password requirements.</source>
+        <target state="final">Jūsu ievadītā parole neatbilda paroles prasībām.</target>
+      </trans-unit>
+      <trans-unit id="134" approved="yes">
+        <source>We could not find your account with that User Name. Please double-check and try again.</source>
+        <target state="final">Mums neizdevās atrast jūsu kontu ar tādu lietotāja vārdu. Lūdzu, pārbaudiet un mēģiniet vēlreiz.</target>
+      </trans-unit>
+      <trans-unit id="135" approved="yes">
+        <source>You have opened a one-time password reset link that has either been used or is no longer valid. Please request a new one using the form below.</source>
+        <target state="final">Jūs atvērāt vienreizēju paroles atiestatīšanas saiti, kas ir izmantota vai vairs nav derīga. Lūdzu, pieprasiet jaunu saiti, izmantojot zemāk norādīto veidlapu.</target>
+      </trans-unit>
+      <trans-unit id="136">
+        <source>New passwords do not match.</source>
+        <target state="needs-translation">New passwords do not match.</target>
+      </trans-unit>
+      <trans-unit id="137">
+        <source>Cannot change the password now. Try again later.</source>
+        <target state="needs-translation">Cannot change the password now. Try again later.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

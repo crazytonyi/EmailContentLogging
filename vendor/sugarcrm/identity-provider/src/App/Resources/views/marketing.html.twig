@@ -1,0 +1,10 @@
+{% set marketingExtrasUrlStatic = app.getMarketingExtrasService.getStaticUrl %}
+<script type="text/javascript" src="{{ asset('marketing.js', 'js') }}"></script>
+<div class="marketing-extras">
+    <div class="iframe-container">
+        <iframe title="Marketing Content" scrolling="no"></iframe>
+    </div>
+</div>
+<script>
+    new MarketingExtras('{{ marketingExtrasUrlStatic }}', '{{ marketingExtrasApi }}');
+</script>

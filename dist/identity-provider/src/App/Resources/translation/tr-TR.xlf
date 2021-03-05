@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-US" datatype="plaintext" original="en.xlf" target-language="tr">
+    <body>
+      <trans-unit id="1" approved="yes">
+        <source>Tenant</source>
+        <target state="final">Kiracı</target>
+      </trans-unit>
+      <trans-unit id="2" approved="yes">
+        <source>User Name</source>
+        <target state="final">Kullanıcı Adı</target>
+      </trans-unit>
+      <trans-unit id="3" approved="yes">
+        <source>Password</source>
+        <target state="final">Parola</target>
+      </trans-unit>
+      <trans-unit id="4" approved="yes">
+        <source>Forgot Password?</source>
+        <target state="final">Parolanızı Mı Unuttunuz?</target>
+      </trans-unit>
+      <trans-unit id="5" approved="yes">
+        <source>Log In</source>
+        <target state="final">Oturum Aç</target>
+      </trans-unit>
+      <trans-unit id="6" approved="yes">
+        <source>Log out</source>
+        <target state="final">Oturumu Kapat</target>
+      </trans-unit>
+      <trans-unit id="7" approved="yes">
+        <source>Single Sign-On</source>
+        <target state="final">Tekli Oturum Açma</target>
+      </trans-unit>
+      <trans-unit id="8" approved="yes">
+        <source>You are logged in as %user_name%</source>
+        <target state="final">%user_name% olarak oturumu açtınız</target>
+      </trans-unit>
+      <trans-unit id="9" approved="yes">
+        <source>Your tenant id is %tenant%</source>
+        <target state="final">Kiracı kimliğiniz %tenant%</target>
+      </trans-unit>
+      <trans-unit id="10" approved="yes">
+        <source>Authentication provider - %provider%</source>
+        <target state="final">Kimlik doğrulama sağlayıcısı - %provider%</target>
+      </trans-unit>
+      <trans-unit id="11" approved="yes">
+        <source>Application not verified</source>
+        <target state="final">Uygulama doğrulanmadı</target>
+      </trans-unit>
+      <trans-unit id="12" approved="yes">
+        <source>This app hasn't been verified by SugarCRM admin yet and confirmed it's authentic.</source>
+        <target state="final">Bu uygulama henüz SugarCRM yöneticisi tarafından doğrulanmadı ve orijinalliği onaylanmadı.</target>
+      </trans-unit>
+      <trans-unit id="13" approved="yes">
+        <source>Unverified apps may pose a threat to your personal data.</source>
+        <target state="final">Doğrulanmamış uygulamalar, kişisel verileriniz için tehdit oluşturabilir.</target>
+      </trans-unit>
+      <trans-unit id="14" approved="yes">
+        <source>Back to Safety</source>
+        <target state="final">Güvenliğe Geri Dön</target>
+      </trans-unit>
+      <trans-unit id="15" approved="yes">
+        <source>Application is requesting access</source>
+        <target state="final">Uygulama erişim istiyor</target>
+      </trans-unit>
+      <trans-unit id="16" approved="yes">
+        <source>"%client%" is requesting access.</source>
+        <target state="final">"%client%" erişim istiyor.</target>
+      </trans-unit>
+      <trans-unit id="17" approved="yes">
+        <source>"%client%" is requesting access to use your Sugar account to:</source>
+        <target state="final">"%client%" Sugar hesabınızı kullanmak için erişim istiyor:</target>
+      </trans-unit>
+      <trans-unit id="18" approved="yes">
+        <source>Do you want to allow this access?</source>
+        <target state="final">Bu erişime izin vermek istiyor musunuz?</target>
+      </trans-unit>
+      <trans-unit id="19" approved="yes">
+        <source>No, Thanks</source>
+        <target state="final">Hayır, Teşekkür ederim</target>
+      </trans-unit>
+      <trans-unit id="20" approved="yes">
+        <source>Allow access</source>
+        <target state="final">Erişime izin ver</target>
+      </trans-unit>
+      <trans-unit id="21" approved="yes">
+        <source>Sorry, service is not able to process the request.</source>
+        <target state="final">Üzgünüz, hizmet talebi işleyemiyor.</target>
+      </trans-unit>
+      <trans-unit id="22" approved="yes">
+        <source>error</source>
+        <target state="final">hata</target>
+      </trans-unit>
+      <trans-unit id="25" approved="yes">
+        <source>Enter your user name below to receive the password reset instructions.</source>
+        <target state="final">Parola sıfırlama talimatlarını almak için kullanıcı adınızı aşağıya girin.</target>
+      </trans-unit>
+      <trans-unit id="26" approved="yes">
+        <source>Required</source>
+        <target state="final">Gerekli</target>
+      </trans-unit>
+      <trans-unit id="27" approved="yes">
+        <source>Cancel</source>
+        <target state="final">İptal</target>
+      </trans-unit>
+      <trans-unit id="28" approved="yes">
+        <source>Send</source>
+        <target state="final">Gönder</target>
+      </trans-unit>
+      <trans-unit id="29" approved="yes">
+        <source>Reset your password</source>
+        <target state="final">Parolanızı sıfırlayın</target>
+      </trans-unit>
+      <trans-unit id="30" approved="yes">
+        <source>Please choose a new password to finish log in.</source>
+        <target state="final">Oturum açmayı tamamlamak için lütfen yeni bir parola seçin.</target>
+      </trans-unit>
+      <trans-unit id="31" approved="yes">
+        <source>Read some tips on %link%creating a secure password.%endlink%</source>
+        <target state="final">%link%Güvenli bir parola oluşturmak%endlink% ile ilgili bazı ipuçlarını okuyun.</target>
+      </trans-unit>
+      <trans-unit id="32" approved="yes">
+        <source>New password</source>
+        <target state="final">Yeni parola</target>
+      </trans-unit>
+      <trans-unit id="33" approved="yes">
+        <source>Confirm password</source>
+        <target state="final">Parolayı onayla</target>
+      </trans-unit>
+      <trans-unit id="34" approved="yes">
+        <source>Change password</source>
+        <target state="final">Parolayı değiştir</target>
+      </trans-unit>
+      <trans-unit id="35" approved="yes">
+        <source>Password reset successful</source>
+        <target state="final">Parola sıfırlandı</target>
+      </trans-unit>
+      <trans-unit id="36" approved="yes">
+        <source>Awesome, you've successfully updated your password.</source>
+        <target state="final">Harika, parolanızı başarılı şekilde güncellediniz.</target>
+      </trans-unit>
+      <trans-unit id="37" approved="yes">
+        <source>Now you can log in and check if %link%your profile%endlink% is correct.</source>
+        <target state="final">Artık oturum açarak %link%profilinizin%endlink% doğru olup olmadığını kontrol edebilirsiniz.</target>
+      </trans-unit>
+      <trans-unit id="38" approved="yes">
+        <source>Password reset email sent</source>
+        <target state="final">Parola sıfırlama e-postası gönderildi</target>
+      </trans-unit>
+      <trans-unit id="39" approved="yes">
+        <source>An email has been sent to following address %emailaddress%.</source>
+        <target state="final">Bir e-posta şu adrese gönderildi %emailaddress%.</target>
+      </trans-unit>
+      <trans-unit id="40" approved="yes">
+        <source>Follow the directions in the email to reset your password.</source>
+        <target state="final">Parolanızı sıfırlamak için e-postadaki talimatları takip edin.</target>
+      </trans-unit>
+      <trans-unit id="41" approved="yes">
+        <source>Done</source>
+        <target state="final">Bitti</target>
+      </trans-unit>
+      <trans-unit id="42" approved="yes">
+        <source>Login using SAML</source>
+        <target state="final">SAML kullanarak oturum açın</target>
+      </trans-unit>
+      <trans-unit id="43" approved="yes">
+        <source>User is logged out</source>
+        <target state="final">Kullanıcı oturumu kapattı</target>
+      </trans-unit>
+      <trans-unit id="44" approved="yes">
+        <source>Back</source>
+        <target state="final">Geri</target>
+      </trans-unit>
+      <trans-unit id="45" approved="yes">
+        <source>Invalid tenant ID</source>
+        <target state="final">Geçersiz kiracı kimliği</target>
+      </trans-unit>
+      <trans-unit id="46" approved="yes">
+        <source>All fields are required</source>
+        <target state="final">Tüm alanların doldurulması gerekli</target>
+      </trans-unit>
+      <trans-unit id="47" approved="yes">
+        <source>Invalid credentials</source>
+        <target state="final">Geçersiz kimlik bilgileri</target>
+      </trans-unit>
+      <trans-unit id="48" approved="yes">
+        <source>Password expired</source>
+        <target state="final">Parola süresi doldu</target>
+      </trans-unit>
+      <trans-unit id="49" approved="yes">
+        <source>Invalid scope</source>
+        <target state="final">Geçersiz kapsam</target>
+      </trans-unit>
+      <trans-unit id="50" approved="yes">
+        <source>Authentication SAML request is not valid</source>
+        <target state="final">Kimlik doğrulama SAML isteği geçerli değil</target>
+      </trans-unit>
+      <trans-unit id="51" approved="yes">
+        <source>Authentication SAML response is not valid</source>
+        <target state="final">Kimlik doğrulama SAML yanıtı geçerli değil</target>
+      </trans-unit>
+      <trans-unit id="52" approved="yes">
+        <source>Too many failed login attempts.</source>
+        <target state="final">Çok fazla başarısız oturum açma denemesi.</target>
+      </trans-unit>
+      <trans-unit id="53" approved="yes">
+        <source>Please contact the system administrator.</source>
+        <target state="final">Lütfen sistem yöneticisiyle iletişime geçin.</target>
+      </trans-unit>
+      <trans-unit id="54" approved="yes">
+        <source>You can try logging in again in</source>
+        <target state="final">Şu süre içinde tekrar oturum açmayı deneyebilirsiniz</target>
+      </trans-unit>
+      <trans-unit id="55" approved="yes">
+        <source>days</source>
+        <target state="final">gün</target>
+      </trans-unit>
+      <trans-unit id="56" approved="yes">
+        <source>hours</source>
+        <target state="final">saat</target>
+      </trans-unit>
+      <trans-unit id="57" approved="yes">
+        <source>minutes</source>
+        <target state="final">dakika</target>
+      </trans-unit>
+      <trans-unit id="58" approved="yes">
+        <source>seconds</source>
+        <target state="final">saniye</target>
+      </trans-unit>
+      <trans-unit id="59" approved="yes">
+        <source>Private key and x509cert should be defined</source>
+        <target state="final">Özel tuş ve x509cert tanımlanmalıdır</target>
+      </trans-unit>
+      <trans-unit id="60" approved="yes">
+        <source>Invalid IdP configuration</source>
+        <target state="final">Geçersiz IdP yapılandırması</target>
+      </trans-unit>
+      <trans-unit id="61" approved="yes">
+        <source>Invalid authentication services configuration</source>
+        <target state="final">Geçersiz kimlik doğrulama hizmetleri yapılandırması</target>
+      </trans-unit>
+      <trans-unit id="62" approved="yes">
+        <source>LDAP config option groupDn must not be empty</source>
+        <target state="final">LDAP yapılandırma seçeneği groupDn boş olmamalıdır</target>
+      </trans-unit>
+      <trans-unit id="63" approved="yes">
+        <source>LDAP groupAttribute must not be empty</source>
+        <target state="final">LDAP groupAttribute boş olmamalıdır</target>
+      </trans-unit>
+      <trans-unit id="64" approved="yes">
+        <source>LDAP baseDn must not be empty</source>
+        <target state="final">LDAP baseDn boş olmamalıdır</target>
+      </trans-unit>
+      <trans-unit id="65" approved="yes">
+        <source>Consent not found</source>
+        <target state="final">Onay bulunamadı</target>
+      </trans-unit>
+      <trans-unit id="66" approved="yes">
+        <source>Consent session not found</source>
+        <target state="final">Onay oturumu bulunamadı</target>
+      </trans-unit>
+      <trans-unit id="67" approved="yes">
+        <source>Failed to send email for password recovery. Please try again.</source>
+        <target state="final">Parola kurtarma için e-posta gönderilemedi. Lütfen tekrar deneyin.</target>
+      </trans-unit>
+      <trans-unit id="68" approved="yes">
+        <source>SAML is not configured for given tenant</source>
+        <target state="final">SAML, söz konusu kiracı için yapılandırılmamış</target>
+      </trans-unit>
+      <trans-unit id="69" approved="yes">
+        <source>Invalid SAML configuration</source>
+        <target state="final">Geçersiz SAML yapılandırması</target>
+      </trans-unit>
+      <trans-unit id="70" approved="yes">
+        <source>SAML metadata validation failed:</source>
+        <target state="final">SAML meta veri doğrulaması başarısız oldu:</target>
+      </trans-unit>
+      <trans-unit id="71" approved="yes">
+        <source>Invalid SAML logout data</source>
+        <target state="final">Geçersiz SAML oturum kapatma verisi</target>
+      </trans-unit>
+      <trans-unit id="72" approved="yes">
+        <source>Required parameters missing</source>
+        <target state="final">Gerekli parametreler eksik</target>
+      </trans-unit>
+      <trans-unit id="73" approved="yes">
+        <source>Invalid parameters</source>
+        <target state="final">Geçersiz parametreler</target>
+      </trans-unit>
+      <trans-unit id="74" approved="yes">
+        <source>Password is empty</source>
+        <target state="final">Parola boş</target>
+      </trans-unit>
+      <trans-unit id="75" approved="yes">
+        <source>Password is too short. It should have {{ limit }} characters or more.</source>
+        <target state="final">Parola çok kısa. {{ limit }} veya daha fazla karakterden oluşmalıdır.</target>
+      </trans-unit>
+      <trans-unit id="76" approved="yes">
+        <source>Password is too long. It should have {{ limit }} characters or less.</source>
+        <target state="final">Parola çok uzun. {{ limit }} veya daha az karakterden oluşmalıdır.</target>
+      </trans-unit>
+      <trans-unit id="77" approved="yes">
+        <source>Password should contains at least one upper-case letter</source>
+        <target state="final">Parola, en az bir büyük harf içermelidir</target>
+      </trans-unit>
+      <trans-unit id="78" approved="yes">
+        <source>Password should contains at least one lower-case letter</source>
+        <target state="final">Parola, en az bir küçük harf içermelidir</target>
+      </trans-unit>
+      <trans-unit id="79" approved="yes">
+        <source>Password should contains at least one number</source>
+        <target state="final">Parola, en az bir rakam içermelidir</target>
+      </trans-unit>
+      <trans-unit id="80" approved="yes">
+        <source>Password should contains at least one special character</source>
+        <target state="final">Parola, en az bir özel karakter içermelidir</target>
+      </trans-unit>
+      <trans-unit id="81" approved="yes">
+        <source>Password confirmation is empty</source>
+        <target state="final">Parola doğrulama boş</target>
+      </trans-unit>
+      <trans-unit id="82" approved="yes">
+        <source>Password and password confirmation don't match</source>
+        <target state="final">Parola ile parola onayı eşleşmiyor</target>
+      </trans-unit>
+      <trans-unit id="83" approved="yes">
+        <source>One time token not found</source>
+        <target state="final">Tek seferlik belirteç bulunamadı</target>
+      </trans-unit>
+      <trans-unit id="84" approved="yes">
+        <source>Tenant not found</source>
+        <target state="final">Kiracı bulunamadı</target>
+      </trans-unit>
+      <trans-unit id="85" approved="yes">
+        <source>User not found</source>
+        <target state="final">Kullanıcı bulunamadı</target>
+      </trans-unit>
+      <trans-unit id="86" approved="yes">
+        <source>View</source>
+        <target state="final">Görüntüle</target>
+      </trans-unit>
+      <trans-unit id="87" approved="yes">
+        <source>email</source>
+        <target state="final">e-posta</target>
+      </trans-unit>
+      <trans-unit id="88" approved="yes">
+        <source>address</source>
+        <target state="final">adres</target>
+      </trans-unit>
+      <trans-unit id="89" approved="yes">
+        <source>phone number</source>
+        <target state="final">telefon numarası</target>
+      </trans-unit>
+      <trans-unit id="90" approved="yes">
+        <source>Access all the above information at any time</source>
+        <target state="final">Yukarıdaki bilgilere istediğiniz zaman erişin</target>
+      </trans-unit>
+      <trans-unit id="91" approved="yes">
+        <source>View your Sugar profile which includes first and last name</source>
+        <target state="final">Adı ve soyadı içeren Sugar profilinizi görüntüleyin</target>
+      </trans-unit>
+      <trans-unit id="92" approved="yes">
+        <source>Authenticate using OpenID Connect</source>
+        <target state="final">OpenID Connect'i kullanarak kimlik doğrula</target>
+      </trans-unit>
+      <trans-unit id="93" approved="yes">
+        <source>View and update any Sugar data (Accounts, Contacts, Leads, etc.) that you are permitted to access</source>
+        <target state="final">Erişim izniniz olan tüm Sugar verilerini (Hesaplar, Kişiler, Potansiyel Müşteriler vb.) görüntüleyin ve güncelleyin</target>
+      </trans-unit>
+      <trans-unit id="94" approved="yes">
+        <source>View and manage your Identity and Access Management (IAM) objects</source>
+        <target state="final">Kimlik ve Erişim Yönetimi (IAM) nesnelerinizi görüntüleyin ve yönetin</target>
+      </trans-unit>
+      <trans-unit id="95" approved="yes">
+        <source>Only authorized users can change password</source>
+        <target state="final">Yalnızca yetkili kullanıcılar şifreyi değiştirebilir</target>
+      </trans-unit>
+      <trans-unit id="96" approved="yes">
+        <source>Only local users can change password</source>
+        <target state="final">Yalnızca yerel kullanıcılar şifreyi değiştirebilir</target>
+      </trans-unit>
+      <trans-unit id="97" approved="yes">
+        <source>Change your password</source>
+        <target state="final">Parolanızı değiştirin</target>
+      </trans-unit>
+      <trans-unit id="98" approved="yes">
+        <source>Please enter your old password and choose a new password.</source>
+        <target state="final">Lütfen eski parolanızı girin ve yeni bir şifre seçin.</target>
+      </trans-unit>
+      <trans-unit id="99" approved="yes">
+        <source>Old password</source>
+        <target state="final">Eski parola</target>
+      </trans-unit>
+      <trans-unit id="100" approved="yes">
+        <source>Old password is empty</source>
+        <target state="final">Yeni parola boş</target>
+      </trans-unit>
+      <trans-unit id="101" approved="yes">
+        <source>Old password is not valid</source>
+        <target state="final">Eski parola geçerli değil</target>
+      </trans-unit>
+      <trans-unit id="102" approved="yes">
+        <source>No user is found</source>
+        <target state="final">Kullanıcı bulunamadı</target>
+      </trans-unit>
+      <trans-unit id="103" approved="yes">
+        <source>Password changed successful</source>
+        <target state="final">Parola başarılı şekilde değiştirildi</target>
+      </trans-unit>
+      <trans-unit id="104" approved="yes">
+        <source>Continue</source>
+        <target state="final">Devam</target>
+      </trans-unit>
+      <trans-unit id="105" approved="yes">
+        <source>Tenant isn't active</source>
+        <target state="final">Kiracı aktif değil</target>
+      </trans-unit>
+      <trans-unit id="106" approved="yes">
+        <source>New password must be different from previous password</source>
+        <target state="final">Yeni parola, önceki paroladan farklı olmalıdır</target>
+      </trans-unit>
+      <trans-unit id="107" approved="yes">
+        <source>Show log in form</source>
+        <target state="final">Oturum açma formunu göster</target>
+      </trans-unit>
+      <trans-unit id="108" approved="yes">
+        <source>Tenant ID</source>
+        <target state="final">Kiracı Kimliği</target>
+      </trans-unit>
+      <trans-unit id="109" approved="yes">
+        <source>Next</source>
+        <target state="final">İleri</target>
+      </trans-unit>
+      <trans-unit id="110" approved="yes">
+        <source>Please proceed with caution and only allow access if you are logging in to "%client%".</source>
+        <target state="final">Lütfen dikkatli devam edin ve yalnızca "%client%" oturuma açıyorsanız erişime izin verin .</target>
+      </trans-unit>
+      <trans-unit id="111" approved="yes">
+        <source>Learn about how %client% will handle your Sugar data by reviewing the %termsLink%Terms of Use%endlink% and %privacyLink%Privacy policies%endlink%.</source>
+        <target state="final">%termsLink%Kullanım Koşulları%endlink% ve %privacyLink%Gizlilik politikası%endlink%'nı inceleyerek %client%'ın, Sugar verilerinizi nasıl kullanacağı hakkında bilgi edinin.</target>
+      </trans-unit>
+      <trans-unit id="112" approved="yes">
+        <source>You are about to authorize the application "%client%" to act on behalf of your users using the following permissions:</source>
+        <target state="final">"%client%" uygulamasına aşağıdaki izinleri kullanarak kullanıcılarınız adına işlem yapma yetkisi vermek üzeresiniz:</target>
+      </trans-unit>
+      <trans-unit id="113" approved="yes">
+        <source>You are about to authorize of application "%client%" to act on behalf of your users.</source>
+        <target state="final">"%client%" uygulamasına kullanıcılarınız adına işlem yapma yetkisi vermek üzeresiniz.</target>
+      </trans-unit>
+      <trans-unit id="114" approved="yes">
+        <source>Remove access for application</source>
+        <target state="final">Uygulama erişimini kaldırın</target>
+      </trans-unit>
+      <trans-unit id="115" approved="yes">
+        <source>You are about to remove authorization for the application  "%client%" to act on behalf of your users.</source>
+        <target state="final">"%client%" uygulamasının kullanıcılarınız adına işlem yapma yetkisini kaldırmak üzeresiniz.</target>
+      </trans-unit>
+      <trans-unit id="116" approved="yes">
+        <source>You are about to remove authorization of application "%client%" to act on behalf of your users with the following permissions:</source>
+        <target state="final">"%client%" uygulamasına aşağıdaki izinlere sahip kullanıcılarınız adına işlem yapma yetkisi kaldırmak üzeresiniz:</target>
+      </trans-unit>
+      <trans-unit id="117" approved="yes">
+        <source>Do you want to remove this access?</source>
+        <target state="final">Bu erişimi kaldırmayı istiyor musunuz?</target>
+      </trans-unit>
+      <trans-unit id="118" approved="yes">
+        <source>Remove access</source>
+        <target state="final">Erişimi kaldır</target>
+      </trans-unit>
+      <trans-unit id="119" approved="yes">
+        <source>Authorize access for application</source>
+        <target state="final">Uygulama için erişim yetkisi ver</target>
+      </trans-unit>
+      <trans-unit id="120" approved="yes">
+        <source>User account is disabled</source>
+        <target state="final">Kullanıcı hesabı devre dışı</target>
+      </trans-unit>
+      <trans-unit id="121" approved="yes">
+        <source>Did not find tenant?</source>
+        <target state="final">Kiracı bulamadınız mı?</target>
+      </trans-unit>
+      <trans-unit id="122" approved="yes">
+        <source>Continue with</source>
+        <target state="final">Şununla devam et:</target>
+      </trans-unit>
+      <trans-unit id="123" approved="yes">
+        <source>Log into another tenant</source>
+        <target state="final">Başka bir kiracıda oturum açın</target>
+      </trans-unit>
+      <trans-unit id="124" approved="yes">
+        <source>logged out</source>
+        <target state="final">oturum kapatıldı</target>
+      </trans-unit>
+      <trans-unit id="125" approved="yes">
+        <source>Welcome to</source>
+        <target state="final">Hoş Geldiniz</target>
+      </trans-unit>
+      <trans-unit id="126" approved="yes">
+        <source>Minimum length = %minimum_length%</source>
+        <target state="final">Minimum uzunluk = %minimum_length%</target>
+      </trans-unit>
+      <trans-unit id="127" approved="yes">
+        <source>Maximum length = %maximum_length%</source>
+        <target state="final">Maksimum uzunluk = %maximum_length%</target>
+      </trans-unit>
+      <trans-unit id="128" approved="yes">
+        <source>Must contain one upper case letter (A-Z)</source>
+        <target state="final">Bir büyük harf (A-Z) içermelidir</target>
+      </trans-unit>
+      <trans-unit id="129" approved="yes">
+        <source>Must contain one lower case letter (a-z)</source>
+        <target state="final">Bir küçük harf (a-z) içermelidir</target>
+      </trans-unit>
+      <trans-unit id="130" approved="yes">
+        <source>Must contain one number (0-9)</source>
+        <target state="final">Bir sayı (0-9) içermelidir</target>
+      </trans-unit>
+      <trans-unit id="131" approved="yes">
+        <source>Must contain one special character (~!@#$%^&amp;*()_+-={}|)</source>
+        <target state="final">Bir özel karakter içermelidir (~!@#$%^&amp;*()_+-={}|)</target>
+      </trans-unit>
+      <trans-unit id="132" approved="yes">
+        <source>Password requirements:</source>
+        <target state="final">Parola gereklilikleri:</target>
+      </trans-unit>
+      <trans-unit id="133" approved="yes">
+        <source>The password you entered does not meet the password requirements.</source>
+        <target state="final">Girmiş olduğunu parola, parola gerekliliklerini karşılamıyor.</target>
+      </trans-unit>
+      <trans-unit id="134" approved="yes">
+        <source>We could not find your account with that User Name. Please double-check and try again.</source>
+        <target state="final">Bu Kullanıcı Adına sahip hesabınızı bulamadık. Lütfen tekrar kontrol ederek yeniden deneyin.</target>
+      </trans-unit>
+      <trans-unit id="135" approved="yes">
+        <source>You have opened a one-time password reset link that has either been used or is no longer valid. Please request a new one using the form below.</source>
+        <target state="final">Kullanılmış veya artık geçerli olmayan bir defalık parola sıfırlama bağlantısı açtınız. Lütfen aşağıdaki formu kullanarak yeni bir tane isteyin.</target>
+      </trans-unit>
+      <trans-unit id="136">
+        <source>New passwords do not match.</source>
+        <target state="needs-translation">New passwords do not match.</target>
+      </trans-unit>
+      <trans-unit id="137">
+        <source>Cannot change the password now. Try again later.</source>
+        <target state="needs-translation">Cannot change the password now. Try again later.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

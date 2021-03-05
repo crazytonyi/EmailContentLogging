@@ -1,0 +1,291 @@
+/* LOGIN
+  ----------------*/
+
+.welcome, .welcome-with-marketing {
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+
+  .modal-header {
+    padding: 9px 10px;
+
+    .step-circle .fa-check-circle {
+      display: inline-block;
+    }
+  }
+
+  .modal-body {
+    padding: 10px 8px 54px;
+    min-height: 168px;
+    margin: 0;
+
+    &.record .record-cell {
+      &:first-child {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .modal-header-firstlogin {
+    position: relative;
+    padding: 10px 0;
+
+    .step-circle {
+      position: absolute;
+      margin-right: 0;
+      top: 14px;
+      left: 8px;
+    }
+
+    .firstlogin-title {
+      display: inline-block;
+      box-sizing: border-box;
+      padding-left: 45px;
+      margin-left: 0;
+
+      span {
+        display: inline-block;
+      }
+
+      h3 {
+        line-height: 24px;
+      }
+    }
+
+    .progress-section {
+      display: inline-block;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0 14px;
+    }
+  }
+
+  .control-group {
+    input[type="password"],
+    input[type="text"] {
+      margin-bottom: 10px;
+    }
+  }
+
+  .thumbnails {
+    margin: 0;
+
+    li {
+      margin-bottom: 9px;
+
+      &.span3 .thumbnail {
+        padding: 14px 6px;
+        height: 44px;
+      }
+    }
+
+    .thumbnail {
+      height: 60px;
+      padding: 6px;
+      text-align: center;
+      color: @gray;
+      font-size: @fontSizeSmall;
+      #gradient > .vertical(@grayLighter, darken(@grayLighter, 1%));
+
+      transition: all 0s;
+
+      i {
+        font-size: 24px;
+        display: inline-block;
+        width: 100%;
+        color: @grayLight;
+      }
+
+      &:hover {
+        box-shadow: @shadowWidget;
+        border: none;
+
+        i {
+          text-decoration: none;
+          color: @gray;
+        }
+      }
+    }
+  }
+}
+.welcome{
+  width: 100%;
+}
+.welcome-with-marketing{
+  width: @contentWidthWithMarketing;
+}
+
+@media (max-width: @maxWidthWidthWithMarketing) {
+  .welcome-with-marketing {
+    width: 100%;
+  }
+}
+
+.thumbnail.signup,
+.thumbnail.login {
+  width: 240px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 4px;
+
+  .brand {
+    margin-top: 0;
+  }
+
+  form {
+    margin-bottom: 0;
+  }
+
+  .control-group {
+    margin-bottom: 0;
+  }
+
+  ul.list-group {
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+
+    li.list-group-item {
+      position: relative;
+      display: block;
+      text-align: left;
+      padding: 0.5rem 0.1rem;
+      margin: 0px 8px;
+      border-bottom: 2px solid @grayLighter;
+      cursor: pointer;
+
+      .user {
+        font-weight: bold;
+
+        .login-status {
+          float: right;
+          font-style: italic;
+          font-weight: normal;
+        }
+      }
+      .tenant {
+        font-weight: 100;
+        color: darken(@grayLighter, 40%);
+      }
+    }
+  }
+}
+
+.signup-footer,
+.login-footer {
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 8px;
+
+  .btn-help {
+    float: left;
+    padding-left: 0px;
+  }
+}
+
+html.rtl {
+  .signup-footer,
+  .login-footer {
+    text-align: left;
+  }
+
+  .btn-help {
+    float: right;
+  }
+}
+
+.login-header {
+  margin: 25px 2px;
+
+  h4 {
+    font-weight: 600;
+  }
+}
+
+.tenant-welcome {
+  margin-bottom: 10px;
+  h4 {
+    font-weight: 600;
+  }
+}
+
+.password-reqs-status {
+  border-top-left-radius: @baseBorderRadius;
+  border-top-right-radius: @baseBorderRadius;
+  border-bottom: none;
+  padding: 4px;
+}
+
+.password-reqs {
+  list-style: none;
+  text-align: left;
+  margin-left: 0;
+  border-bottom-left-radius: @baseBorderRadius;
+  border-bottom-right-radius: @baseBorderRadius;
+  padding: 4px 8px;
+  margin-bottom: 18px;
+}
+
+.login .control-group > .edit > .input-append,
+.signup .control-group > .edit > .input-append {
+  width: 219px;
+}
+
+/* NEW SKIN START */
+
+.thumbnail.signup,
+.thumbnail.login {
+  /* additive */
+  border-radius: 0;
+  background: @white;
+  position: relative;
+  z-index: @zindexDefault;
+
+  form {
+    > .help-block,
+    .signup-footer {
+      /* additive */
+      margin-left: 10px;
+    }
+  }
+}
+
+/* NEW SKIN END */
+
+.marketing-extras {
+  position: fixed;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  direction: ltr;
+
+  .iframe-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+}
+
+html.rtl {
+  .marketing-extras {
+    right: auto;
+    left: 0;
+    direction: rtl;
+  }
+}
+
+@media (max-width: @maxWidthWidthWithMarketing) {
+  .welcome {
+    width: 100%;
+  }
+
+  .marketing-extras {
+    display: none;
+  }
+}

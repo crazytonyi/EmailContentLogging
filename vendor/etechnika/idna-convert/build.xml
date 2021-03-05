@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Idna converter" default="validation:full">
+    <property name="dir:root" value="${application.startdir}"/>
+    <property name="dir:var" value="${dir:root}/var"/>
+    <property name="dir:test-results" value="${dir:var}/tests"/>
+    <property name="threads" value="0" override="true"/>
+
+    <fileset dir="${dir:root}/src" id="source_files">
+        <include name="**/*.php"/>
+    </fileset>
+
+    <target name="validation:full" description="Run all validations" depends="detect-cpus, remove:test-results">
+        <parallel threadCount="${threads}">
+            <phingcall target="validation:phpunit"/>
+            <phingcall target="validation:phpunit-coverage"/>
+            <phingcall target="validation:coding-standard"/>
+            <phingcall target="validation:mess-detect"/>
+            <phingcall target="validation:copy-paste-detect"/>
+            <phingcall target="validation:lint"/>
+            <phingcall target="validation:phpdcd"/>
+        </parallel>
+        <echo msg="Success: All validation done."/>
+    </target>
+
+    <target name="validation:coding-standard" description="Checks PHP coding standard with php code sniffer.">
+        <property name="phpcodesniffer-output-xml" value=""/>
+
+        <phpcodesniffer standard="PSR2" allowedFileExtensions="php">
+            <fileset refid="source_files"/>
+            <formatter type="checkstyle" outfile="${dir:test-results}/phpcs.xml"/>
+        </phpcodesniffer>
+
+        <echo msg="Done: validation:coding-standard"/>
+    </target>
+
+    <target name="validation:mess-detect" description="Mess detection in PHP code.">
+        <property name="phpmd-output-xml" value="${dir:test-results}/phpmd.xml"/>
+
+        <phpmd rulesets="codesize,unusedcode,controversial,design">
+            <fileset refid="source_files"/>
+            <formatter type="xml" outfile="${phpmd-output-xml}"/>
+        </phpmd>
+
+        <echo msg="Done: validation:mess-detect"/>
+    </target>
+
+    <target name="validation:copy-paste-detect" description="Checks similar PHP code blocks.">
+        <property name="phpcpd-output-xml" value="${dir:test-results}/phpcpd.xml"/>
+
+        <phpcpd>
+            <fileset refid="source_files"/>
+            <formatter type="pmd" outfile="${phpcpd-output-xml}"/>
+        </phpcpd>
+
+        <echo msg="Done: validation:copy-paste-detect"/>
+    </target>
+
+    <target name="validation:phpunit" description="PHP unit and integration tests">
+        <exec command="bin/phpunit"
+              output="${dir:test-results}/phpunit.log"
+              error="${dir:test-results}/phpunit.err"
+              level="error"
+              checkreturn="true"/>
+
+        <echo msg="Done: validation:phpunit"/>
+    </target>
+
+    <target name="validation:phpunit-coverage" description="PHP unit coverage">
+        <exec command="bin/phpunit --coverage-clover ${dir:test-results}/phpunit-coverage.xml --coverage-html ${dir:test-results}/phpunit-coverage/"
+              output="${dir:test-results}/phpunit-coverage.log"
+              error="${dir:test-results}/phpunit-coverage.err"
+              level="error"
+              checkreturn="true"/>
+
+        <echo msg="Done: validation:phpunit-coverage"/>
+    </target>
+
+    <target name="validation:lint" description="Perform syntax check of PHP sourcecode files">
+        <exec executable="${dir:root}/bin/phing"
+              output="${dir:test-results}/phplint.log"
+              error="${dir:test-results}/phplint.err"
+              checkreturn="true"
+              level="error">
+            <arg line="validation:lint:target"/>
+        </exec>
+        <echo msg="Done: validation:lint"/>
+    </target>
+
+    <target name="validation:lint:target" hidden="true">
+        <phplint haltonfailure="true"
+                 level="error"
+                 deprecatedAsError="true">
+            <fileset refid="source_files"/>
+        </phplint>
+    </target>
+
+    <target name="validation:phpdcd" description="PHP Dead Code Detector">
+        <exec dir="${dir:root}/src"
+              executable="${dir:root}/bin/phpdcd"
+              output="${dir:test-results}/phpdcd.log"
+              error="${dir:test-results}/phpdcd.err">
+            <arg line="--recursive"/>
+            <arg line="${dir:root}/src"/>
+        </exec>
+        <echo msg="Done: validation:phpdcd"/>
+    </target>
+
+    <target name="remove:test-results" description="Clean tests artifacts directory" hidden="true">
+        <delete includeemptydirs="true" dir="${dir:test-results}" failonerror="true" quiet="true"/>
+        <mkdir dir="${dir:test-results}" description="Create test cache directory"/>
+        <echo msg="Success: Directory ${dir:test-results} is clean."/>
+    </target>
+
+    <target name="detect-cpus" hidden="true">
+        <exec executable="nproc"
+              outputProperty="threads"
+              checkreturn="false"
+              level="info">
+        </exec>
+        <echo msg="Detected ${threads} CPU(s)"/>
+    </target>
+</project>

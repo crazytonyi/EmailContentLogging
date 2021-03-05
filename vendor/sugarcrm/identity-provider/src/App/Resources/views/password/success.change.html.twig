@@ -1,0 +1,22 @@
+{% set isMarketing = true %}
+{% extends "index.html.twig" %}
+
+{% block content %}
+    <div class="thumbnail idm-set-password">
+        {% include 'logo.html.twig' %}
+        <section class="content">
+            <h3>{{ 'Password changed successfully'|trans }}</h3>
+            <p>
+                {{ "Awesome, you've successfully updated your password."|trans }}
+            </p>
+        </section>
+        <nav class="nav tcenter">
+            <a href="{{ redirectUrl }}" id="login_link">
+                <button id="set-new-password-btn" class="btn btn-primary">{{ 'Continue'|trans }}</button>
+            </a>
+        </nav>
+    </div>
+{% endblock %}
+{% block marketing %}
+    {% include 'marketing.html.twig' %}
+{% endblock %}

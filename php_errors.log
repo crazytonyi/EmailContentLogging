@@ -1,0 +1,7 @@
+[04-Mar-2021 16:20:50 America/Los_Angeles] PHP Notice:  Undefined index: SERVER_PORT in /var/www/html/install.php on line 125
+[04-Mar-2021 16:20:50 America/Los_Angeles] PHP Notice:  Undefined index: SERVER_NAME in /var/www/html/install.php on line 128
+[04-Mar-2021 16:20:50 America/Los_Angeles] PHP Notice:  Undefined index: SERVER_PORT in /var/www/html/install.php on line 128
+[04-Mar-2021 16:21:05 America/Los_Angeles] PHP Warning:  ini_set(): Cannot change zlib.output_compression - headers already sent in /var/www/html/install/performSetup.php on line 30
+[04-Mar-2021 16:21:05 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/cliInstaller.php:1) in /var/www/html/install/performSetup.php on line 36
+[04-Mar-2021 16:21:05 America/Los_Angeles] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/cliInstaller.php:1) in /var/www/html/install/performSetup.php on line 39
+[04-Mar-2021 16:21:06 America/Los_Angeles] PHP Notice:  Undefined index: SERVER_SOFTWARE in /var/www/html/install/performSetup.php on line 136

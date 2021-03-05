@@ -1,0 +1,291 @@
+// Setting widths for filter row fields
+.console-config .row-fluid div {
+  width: 28%;
+  display: inline-block;
+}
+
+.console-config .row-fluid .filter-selector div {
+  width: 100%;
+}
+
+// Hiding filter row fields
+.console-config .row-fluid .hide {
+  display: none;
+}
+
+// Hides "From/To" labels of values from "between" operators to save space
+.console-config .row-fluid .add-on {
+  display: none;
+}
+
+// Fixes issue with select2 fields automatically opening a search dropdown on creation
+.console-config .filter-selector .select2-drop {
+  display: none;
+}
+
+// Setting proper alignments of filter row fields
+.console-config .row-fluid .filter-actions.btn-group {
+  width: auto;
+  vertical-align: top;
+}
+
+.console-config .row-fluid .span4 {
+  margin-left: 0;
+  float: none;
+  vertical-align: top;
+}
+
+.console-config-fields .bordered {
+  border: 1px solid @grayLightish;
+  cursor: pointer;
+  padding: 5px;
+  color: #176de5;
+  border-radius: 5px;
+}
+
+.console-config-fields {
+  & * .fieldset-field {
+    width: 50%;
+  }
+}
+
+/* side pane */
+.config-side-pane {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  background-color: @grayLighter;
+  overflow-x: scroll;
+}
+
+/* Create two equal columns that sits next to each other */
+.config-side-pane .column {
+  flex: 50%;
+  padding: 10px;
+}
+
+.config-side-pane .border-right {
+  border-right: 1px solid  #ddd;
+}
+
+.config-side-pane nav ul.field-list {
+  width: auto;
+  overflow: hidden;
+  overflow-y: scroll;
+  border: 1px solid @btnSecondaryBorder;
+  list-style-type: none;
+  padding-inline-start: 5px;
+  margin: 0;
+  padding-top: 8px;
+  background-color: @white;
+}
+
+.config-side-pane .columns nav ul.multi-field {
+  height: 63px;
+  width: auto;
+  border: 1px solid grey;
+  border-radius: 8px;
+  list-style-type: none;
+  padding-inline-start: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 0;
+  background-color: @grayMid;
+  cursor: move;
+}
+
+.config-side-pane .fields nav ul.field-list {
+  width: auto;
+  border: 1px solid @btnSecondaryBorder;
+  list-style-type: none;
+  padding-inline-start: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: @white;
+}
+
+.config-side-pane .columns nav ul.field-list {
+  height: 480px;
+  width: 200px;
+  padding-right: 8px;
+}
+
+.config-side-pane .fields nav ul.field-list {
+  height: 500px;
+}
+
+.config-side-pane .columns nav li {
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.config-side-pane .fields nav li {
+  cursor: move;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.config-side-pane .columns nav .pill {
+  border-radius: 8px;
+  background-color: @gray;
+  color: white;
+  margin: 3px;
+  margin-bottom: 5px;
+  cursor: move;
+
+  &:not(.multi-field-block) {
+    padding-right: 18px;
+  }
+}
+
+.config-side-pane .columns nav .pill .list-header {
+  color: black;
+  position: relative;
+  padding-right: 18px;
+}
+
+.config-side-pane .columns nav .outer {
+  margin-left: 6px;
+}
+
+.config-side-pane .multi-field-label {
+  > .fa {
+    color: black;
+  }
+}
+
+.multi-line-list-view {
+  height: 100%;
+  overflow: auto;
+
+  &.console-preview {
+    .multi-line-table {
+      border: 1px solid @tableTheadRowBorderColor;
+      width: 30%;
+
+      th,
+      td {
+        vertical-align: middle;
+        font-weight: normal;
+        line-height: 16px;
+        padding: 6px 4px 6px 14px;
+      }
+
+      tbody tr:not(:last-child) {
+        border-bottom: 1px solid @tableTheadRowBorderColor;
+      }
+
+      .cell-bar--long,
+      .cell-bar--short {
+        border-radius: 4px;
+        height: 10px;
+        margin: 6px 0;
+        background-color: @grayMid;
+      }
+
+      .cell-bar--long {
+        width: 120px;
+      }
+
+      .cell-bar--short {
+        width: 80px;
+      }
+    }
+  }
+}
+
+.config-side-pane .columns {
+  .console-field-remove {
+    right: 3px;
+    color: white;
+  }
+
+  .multi-field-column-remove {
+    right: 6px;
+    color: black;
+  }
+
+  .console-field-remove,
+  .multi-field-column-remove {
+    top: 2px;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .multi-field-hint {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    color: grey;
+  }
+
+  .list-header {
+    padding-left: 12px;
+    padding-right: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .multi-field-block {
+    height: 75px;
+    padding-left: 0;
+    margin-bottom: 5px;
+
+    &:hover {
+      .list-header .fa-times-circle {
+        visibility: visible;
+      }
+    }
+
+    &:not(:hover) {
+      .list-header .fa-times-circle {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .pill {
+    &:not(.multi-field-block) {
+      padding-right: 20px;
+    }
+
+    &.ui-sortable-helper {
+      cursor: move;
+    }
+
+    &:hover {
+      .fa-times-circle {
+        visibility: visible;
+      }
+    }
+
+    &:not(:hover) {
+      .fa-times-circle {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.console-config-instructions {
+  background-color: fade(@lightPacific, 20%);
+  color: @darkTeal;
+  padding: 20px;
+
+  ul {
+    margin-left: 15px;
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: @darkTeal;
+  }
+}

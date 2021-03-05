@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en-US" datatype="plaintext" original="en.xlf" target-language="sv-SE">
+    <body>
+      <trans-unit id="1" approved="yes">
+        <source>Tenant</source>
+        <target state="final">Hyresgäst</target>
+      </trans-unit>
+      <trans-unit id="2" approved="yes">
+        <source>User Name</source>
+        <target state="final">Användarnamn</target>
+      </trans-unit>
+      <trans-unit id="3" approved="yes">
+        <source>Password</source>
+        <target state="final">Lösenord</target>
+      </trans-unit>
+      <trans-unit id="4" approved="yes">
+        <source>Forgot Password?</source>
+        <target state="final">Glömt lösenordet?</target>
+      </trans-unit>
+      <trans-unit id="5" approved="yes">
+        <source>Log In</source>
+        <target state="final">Logga in</target>
+      </trans-unit>
+      <trans-unit id="6" approved="yes">
+        <source>Log out</source>
+        <target state="final">Logga ut</target>
+      </trans-unit>
+      <trans-unit id="7" approved="yes">
+        <source>Single Sign-On</source>
+        <target state="final">Enkel inloggning</target>
+      </trans-unit>
+      <trans-unit id="8" approved="yes">
+        <source>You are logged in as %user_name%</source>
+        <target state="final">Du är inloggad som %user_name%</target>
+      </trans-unit>
+      <trans-unit id="9" approved="yes">
+        <source>Your tenant id is %tenant%</source>
+        <target state="final">Ditt hyresgäst-ID är %tenant%</target>
+      </trans-unit>
+      <trans-unit id="10" approved="yes">
+        <source>Authentication provider - %provider%</source>
+        <target state="final">Autentiseringsleverantör - %provider%</target>
+      </trans-unit>
+      <trans-unit id="11" approved="yes">
+        <source>Application not verified</source>
+        <target state="final">Applikationen har inte verifierats</target>
+      </trans-unit>
+      <trans-unit id="12" approved="yes">
+        <source>This app hasn't been verified by SugarCRM admin yet and confirmed it's authentic.</source>
+        <target state="final">Denna app har inte verifierats av SugarCRM-administratörer ännu och inte bekräftats som autentisk.</target>
+      </trans-unit>
+      <trans-unit id="13" approved="yes">
+        <source>Unverified apps may pose a threat to your personal data.</source>
+        <target state="final">Ej verifierade appar kan utgöra ett hot mot dina personliga data.</target>
+      </trans-unit>
+      <trans-unit id="14" approved="yes">
+        <source>Back to Safety</source>
+        <target state="final">Tillbaka till Trygghet</target>
+      </trans-unit>
+      <trans-unit id="15" approved="yes">
+        <source>Application is requesting access</source>
+        <target state="final">Applikationen begär åtkomst</target>
+      </trans-unit>
+      <trans-unit id="16" approved="yes">
+        <source>"%client%" is requesting access.</source>
+        <target state="final">"%client%" begär åtkomst.</target>
+      </trans-unit>
+      <trans-unit id="17" approved="yes">
+        <source>"%client%" is requesting access to use your Sugar account to:</source>
+        <target state="final">"%client%" begär åtkomst för att använda ditt Sugar-konto till:</target>
+      </trans-unit>
+      <trans-unit id="18" approved="yes">
+        <source>Do you want to allow this access?</source>
+        <target state="final">Vill du tillåta denna åtkomst?</target>
+      </trans-unit>
+      <trans-unit id="19" approved="yes">
+        <source>No, Thanks</source>
+        <target state="final">Nej tack</target>
+      </trans-unit>
+      <trans-unit id="20" approved="yes">
+        <source>Allow access</source>
+        <target state="final">Tillåt åtkomst</target>
+      </trans-unit>
+      <trans-unit id="21" approved="yes">
+        <source>Sorry, service is not able to process the request.</source>
+        <target state="final">Tyvärr, tjänsten kan inte behandla begäran.</target>
+      </trans-unit>
+      <trans-unit id="22" approved="yes">
+        <source>error</source>
+        <target state="final">fel</target>
+      </trans-unit>
+      <trans-unit id="25" approved="yes">
+        <source>Enter your user name below to receive the password reset instructions.</source>
+        <target state="final">Ange ditt användarnamn nedan för att få återställningsanvisningar för lösenordet.</target>
+      </trans-unit>
+      <trans-unit id="26" approved="yes">
+        <source>Required</source>
+        <target state="final">Krävs</target>
+      </trans-unit>
+      <trans-unit id="27" approved="yes">
+        <source>Cancel</source>
+        <target state="final">Avbryt</target>
+      </trans-unit>
+      <trans-unit id="28" approved="yes">
+        <source>Send</source>
+        <target state="final">Skicka</target>
+      </trans-unit>
+      <trans-unit id="29" approved="yes">
+        <source>Reset your password</source>
+        <target state="final">Återställ ditt lösenord</target>
+      </trans-unit>
+      <trans-unit id="30" approved="yes">
+        <source>Please choose a new password to finish log in.</source>
+        <target state="final">Välj ett nytt lösenord för att slutföra inloggningen.</target>
+      </trans-unit>
+      <trans-unit id="31" approved="yes">
+        <source>Read some tips on %link%creating a secure password.%endlink%</source>
+        <target state="final">Läs några tips om att %link%skapa ett säkert lösenord.%endlink%</target>
+      </trans-unit>
+      <trans-unit id="32" approved="yes">
+        <source>New password</source>
+        <target state="final">Nytt lösenord</target>
+      </trans-unit>
+      <trans-unit id="33" approved="yes">
+        <source>Confirm password</source>
+        <target state="final">Bekräfta lösenord</target>
+      </trans-unit>
+      <trans-unit id="34" approved="yes">
+        <source>Change password</source>
+        <target state="final">Ändra lösenord</target>
+      </trans-unit>
+      <trans-unit id="35" approved="yes">
+        <source>Password reset successful</source>
+        <target state="final">Lösenordsåterställning lyckades</target>
+      </trans-unit>
+      <trans-unit id="36" approved="yes">
+        <source>Awesome, you've successfully updated your password.</source>
+        <target state="final">Perfekt! Du har nu uppdaterat ditt lösenord.</target>
+      </trans-unit>
+      <trans-unit id="37" approved="yes">
+        <source>Now you can log in and check if %link%your profile%endlink% is correct.</source>
+        <target state="final">Nu kan du logga in och kontrollera om %link%din profil%endlink% är korrekt.</target>
+      </trans-unit>
+      <trans-unit id="38" approved="yes">
+        <source>Password reset email sent</source>
+        <target state="final">E-post med lösenordsåterställning har skickats</target>
+      </trans-unit>
+      <trans-unit id="39" approved="yes">
+        <source>An email has been sent to following address %emailaddress%.</source>
+        <target state="final">Ett e-postmeddelande har skickats till följande adress %emailaddress%.</target>
+      </trans-unit>
+      <trans-unit id="40" approved="yes">
+        <source>Follow the directions in the email to reset your password.</source>
+        <target state="final">Följ anvisningarna i e-postmeddelandet för att återställa ditt lösenord.</target>
+      </trans-unit>
+      <trans-unit id="41" approved="yes">
+        <source>Done</source>
+        <target state="final">Klart</target>
+      </trans-unit>
+      <trans-unit id="42" approved="yes">
+        <source>Login using SAML</source>
+        <target state="final">Logga in med SAML</target>
+      </trans-unit>
+      <trans-unit id="43" approved="yes">
+        <source>User is logged out</source>
+        <target state="final">Användaren är utloggad</target>
+      </trans-unit>
+      <trans-unit id="44" approved="yes">
+        <source>Back</source>
+        <target state="final">Tillbaka</target>
+      </trans-unit>
+      <trans-unit id="45" approved="yes">
+        <source>Invalid tenant ID</source>
+        <target state="final">Ogiltigt hyresgäst-ID</target>
+      </trans-unit>
+      <trans-unit id="46" approved="yes">
+        <source>All fields are required</source>
+        <target state="final">Alla fält är obligatoriska</target>
+      </trans-unit>
+      <trans-unit id="47" approved="yes">
+        <source>Invalid credentials</source>
+        <target state="final">Ogiltiga användaruppgifter</target>
+      </trans-unit>
+      <trans-unit id="48" approved="yes">
+        <source>Password expired</source>
+        <target state="final">Lösenordet har löpt ut</target>
+      </trans-unit>
+      <trans-unit id="49" approved="yes">
+        <source>Invalid scope</source>
+        <target state="final">Ogiltig omfattning</target>
+      </trans-unit>
+      <trans-unit id="50" approved="yes">
+        <source>Authentication SAML request is not valid</source>
+        <target state="final">Begäran om autentiserings-SAML är inte giltig</target>
+      </trans-unit>
+      <trans-unit id="51" approved="yes">
+        <source>Authentication SAML response is not valid</source>
+        <target state="final">Responsen på autentiserings-SAML är inte giltig</target>
+      </trans-unit>
+      <trans-unit id="52" approved="yes">
+        <source>Too many failed login attempts.</source>
+        <target state="final">För många misslyckade inloggningsförsök.</target>
+      </trans-unit>
+      <trans-unit id="53" approved="yes">
+        <source>Please contact the system administrator.</source>
+        <target state="final">Kontakta systemadministratören.</target>
+      </trans-unit>
+      <trans-unit id="54" approved="yes">
+        <source>You can try logging in again in</source>
+        <target state="final">Du kan försöka logga in igen om</target>
+      </trans-unit>
+      <trans-unit id="55" approved="yes">
+        <source>days</source>
+        <target state="final">dagar</target>
+      </trans-unit>
+      <trans-unit id="56" approved="yes">
+        <source>hours</source>
+        <target state="final">timmar</target>
+      </trans-unit>
+      <trans-unit id="57" approved="yes">
+        <source>minutes</source>
+        <target state="final">minuter</target>
+      </trans-unit>
+      <trans-unit id="58" approved="yes">
+        <source>seconds</source>
+        <target state="final">sekunder</target>
+      </trans-unit>
+      <trans-unit id="59" approved="yes">
+        <source>Private key and x509cert should be defined</source>
+        <target state="final">Privat nyckel och x509cert måste definieras</target>
+      </trans-unit>
+      <trans-unit id="60" approved="yes">
+        <source>Invalid IdP configuration</source>
+        <target state="final">Ogiltig IdP-konfiguration</target>
+      </trans-unit>
+      <trans-unit id="61" approved="yes">
+        <source>Invalid authentication services configuration</source>
+        <target state="final">Ogiltig konfiguration av autentiseringstjänster</target>
+      </trans-unit>
+      <trans-unit id="62" approved="yes">
+        <source>LDAP config option groupDn must not be empty</source>
+        <target state="final">LDAP-konfigurationsalternativet groupDn får inte vara tomt</target>
+      </trans-unit>
+      <trans-unit id="63" approved="yes">
+        <source>LDAP groupAttribute must not be empty</source>
+        <target state="final">LDAP groupAttribute får inte vara tomt</target>
+      </trans-unit>
+      <trans-unit id="64" approved="yes">
+        <source>LDAP baseDn must not be empty</source>
+        <target state="final">LDAP baseDn får inte vara tomt</target>
+      </trans-unit>
+      <trans-unit id="65" approved="yes">
+        <source>Consent not found</source>
+        <target state="final">Medgivande hittades inte</target>
+      </trans-unit>
+      <trans-unit id="66" approved="yes">
+        <source>Consent session not found</source>
+        <target state="final">Medgivandesession hittades inte</target>
+      </trans-unit>
+      <trans-unit id="67" approved="yes">
+        <source>Failed to send email for password recovery. Please try again.</source>
+        <target state="final">Kunde inte skicka e-post för lösenordsåterställning. Försök igen.</target>
+      </trans-unit>
+      <trans-unit id="68" approved="yes">
+        <source>SAML is not configured for given tenant</source>
+        <target state="final">SAML är inte konfigurerat för denna hyresgäst</target>
+      </trans-unit>
+      <trans-unit id="69" approved="yes">
+        <source>Invalid SAML configuration</source>
+        <target state="final">Ogiltig SAML-konfiguration</target>
+      </trans-unit>
+      <trans-unit id="70" approved="yes">
+        <source>SAML metadata validation failed:</source>
+        <target state="final">Validering av SAML-metadata misslyckades:</target>
+      </trans-unit>
+      <trans-unit id="71" approved="yes">
+        <source>Invalid SAML logout data</source>
+        <target state="final">Ogiltiga utloggningsdata för SAML</target>
+      </trans-unit>
+      <trans-unit id="72" approved="yes">
+        <source>Required parameters missing</source>
+        <target state="final">Nödvändiga parametrar saknas</target>
+      </trans-unit>
+      <trans-unit id="73" approved="yes">
+        <source>Invalid parameters</source>
+        <target state="final">Ogiltiga parametrar</target>
+      </trans-unit>
+      <trans-unit id="74" approved="yes">
+        <source>Password is empty</source>
+        <target state="final">Lösenord är tomt</target>
+      </trans-unit>
+      <trans-unit id="75" approved="yes">
+        <source>Password is too short. It should have {{ limit }} characters or more.</source>
+        <target state="final">Lösenordet är för kort. Det ska ha {{ limit }} tecken eller fler.</target>
+      </trans-unit>
+      <trans-unit id="76" approved="yes">
+        <source>Password is too long. It should have {{ limit }} characters or less.</source>
+        <target state="final">Lösenordet är för långt. Det ska ha {{ limit }} tecken eller färre.</target>
+      </trans-unit>
+      <trans-unit id="77" approved="yes">
+        <source>Password should contains at least one upper-case letter</source>
+        <target state="final">Lösenordet ska innehålla minst en stor bokstav</target>
+      </trans-unit>
+      <trans-unit id="78" approved="yes">
+        <source>Password should contains at least one lower-case letter</source>
+        <target state="final">Lösenordet ska innehålla minst en liten bokstav</target>
+      </trans-unit>
+      <trans-unit id="79" approved="yes">
+        <source>Password should contains at least one number</source>
+        <target state="final">Lösenordet ska innehålla minst en siffra</target>
+      </trans-unit>
+      <trans-unit id="80" approved="yes">
+        <source>Password should contains at least one special character</source>
+        <target state="final">Lösenordet ska innehålla minst ett specialtecken</target>
+      </trans-unit>
+      <trans-unit id="81" approved="yes">
+        <source>Password confirmation is empty</source>
+        <target state="final">Lösenordsbekräftelsen är tom</target>
+      </trans-unit>
+      <trans-unit id="82" approved="yes">
+        <source>Password and password confirmation don't match</source>
+        <target state="final">Lösenordet och lösenordsbekräftelsen matchar inte</target>
+      </trans-unit>
+      <trans-unit id="83" approved="yes">
+        <source>One time token not found</source>
+        <target state="final">Engångstoken hittades inte</target>
+      </trans-unit>
+      <trans-unit id="84" approved="yes">
+        <source>Tenant not found</source>
+        <target state="final">Hyresgästen hittades inte</target>
+      </trans-unit>
+      <trans-unit id="85" approved="yes">
+        <source>User not found</source>
+        <target state="final">Användaren hittades inte</target>
+      </trans-unit>
+      <trans-unit id="86" approved="yes">
+        <source>View</source>
+        <target state="final">Visa</target>
+      </trans-unit>
+      <trans-unit id="87" approved="yes">
+        <source>email</source>
+        <target state="final">e-post</target>
+      </trans-unit>
+      <trans-unit id="88" approved="yes">
+        <source>address</source>
+        <target state="final">adress</target>
+      </trans-unit>
+      <trans-unit id="89" approved="yes">
+        <source>phone number</source>
+        <target state="final">telefonnummer</target>
+      </trans-unit>
+      <trans-unit id="90" approved="yes">
+        <source>Access all the above information at any time</source>
+        <target state="final">Du kan komma åt all information ovan när som helst</target>
+      </trans-unit>
+      <trans-unit id="91" approved="yes">
+        <source>View your Sugar profile which includes first and last name</source>
+        <target state="final">Visa din Sugar-profil som inkluderar för- och efternamn</target>
+      </trans-unit>
+      <trans-unit id="92" approved="yes">
+        <source>Authenticate using OpenID Connect</source>
+        <target state="final">Autentisera med hjälp av OpenID Connect</target>
+      </trans-unit>
+      <trans-unit id="93" approved="yes">
+        <source>View and update any Sugar data (Accounts, Contacts, Leads, etc.) that you are permitted to access</source>
+        <target state="final">Visa och uppdatera alla Sugar-data (konton, kontakter, potentiella kunder, osv.) som du har behörighet att öppna</target>
+      </trans-unit>
+      <trans-unit id="94" approved="yes">
+        <source>View and manage your Identity and Access Management (IAM) objects</source>
+        <target state="final">Visa och hantera dina IAM-objekt (identitets- och åtkomsthantering)</target>
+      </trans-unit>
+      <trans-unit id="95" approved="yes">
+        <source>Only authorized users can change password</source>
+        <target state="final">Endast auktoriserade användare kan ändra lösenord</target>
+      </trans-unit>
+      <trans-unit id="96" approved="yes">
+        <source>Only local users can change password</source>
+        <target state="final">Endast lokala användare kan ändra lösenord</target>
+      </trans-unit>
+      <trans-unit id="97" approved="yes">
+        <source>Change your password</source>
+        <target state="final">Ändra ditt lösenord</target>
+      </trans-unit>
+      <trans-unit id="98" approved="yes">
+        <source>Please enter your old password and choose a new password.</source>
+        <target state="final">Ange ditt gamla lösenord och välj sedan ett nytt.</target>
+      </trans-unit>
+      <trans-unit id="99" approved="yes">
+        <source>Old password</source>
+        <target state="final">Gammalt lösenord</target>
+      </trans-unit>
+      <trans-unit id="100" approved="yes">
+        <source>Old password is empty</source>
+        <target state="final">Gammalt lösenord är tomt</target>
+      </trans-unit>
+      <trans-unit id="101" approved="yes">
+        <source>Old password is not valid</source>
+        <target state="final">Gammalt lösenord är inte giltigt</target>
+      </trans-unit>
+      <trans-unit id="102" approved="yes">
+        <source>No user is found</source>
+        <target state="final">Igen användare hittades</target>
+      </trans-unit>
+      <trans-unit id="103" approved="yes">
+        <source>Password changed successful</source>
+        <target state="final">Lösenordet har nu ändrats</target>
+      </trans-unit>
+      <trans-unit id="104" approved="yes">
+        <source>Continue</source>
+        <target state="final">Fortsätt</target>
+      </trans-unit>
+      <trans-unit id="105" approved="yes">
+        <source>Tenant isn't active</source>
+        <target state="final">Hyresgästen är inte aktiv</target>
+      </trans-unit>
+      <trans-unit id="106" approved="yes">
+        <source>New password must be different from previous password</source>
+        <target state="final">Det nya lösenordet måste vara ett annat än det gamla</target>
+      </trans-unit>
+      <trans-unit id="107" approved="yes">
+        <source>Show log in form</source>
+        <target state="final">Visa inloggningsformulär</target>
+      </trans-unit>
+      <trans-unit id="108" approved="yes">
+        <source>Tenant ID</source>
+        <target state="final">Hyresgäst-ID</target>
+      </trans-unit>
+      <trans-unit id="109" approved="yes">
+        <source>Next</source>
+        <target state="final">Nästa</target>
+      </trans-unit>
+      <trans-unit id="110" approved="yes">
+        <source>Please proceed with caution and only allow access if you are logging in to "%client%".</source>
+        <target state="final">Fortsätt med försiktighet och tillåt endast åtkomst om du loggar in på "%client%".</target>
+      </trans-unit>
+      <trans-unit id="111" approved="yes">
+        <source>Learn about how %client% will handle your Sugar data by reviewing the %termsLink%Terms of Use%endlink% and %privacyLink%Privacy policies%endlink%.</source>
+        <target state="final">Läs om hur %client% hanterar dina Sugar-data genom att gå igenom %termsLink%Användarvillkor%endlink% and %privacyLink%Sekretesspolicy%endlink%.</target>
+      </trans-unit>
+      <trans-unit id="112" approved="yes">
+        <source>You are about to authorize the application "%client%" to act on behalf of your users using the following permissions:</source>
+        <target state="final">Du håller på att auktorisera applikationen "%client%" att agera å dina användares vägnar med hjälp av följande behörighet:</target>
+      </trans-unit>
+      <trans-unit id="113" approved="yes">
+        <source>You are about to authorize of application "%client%" to act on behalf of your users.</source>
+        <target state="final">Du håller på att auktorisera applikationen "%client%" att agera å dina användares vägnar.</target>
+      </trans-unit>
+      <trans-unit id="114" approved="yes">
+        <source>Remove access for application</source>
+        <target state="final">Ta bort åtkomst för applikationen</target>
+      </trans-unit>
+      <trans-unit id="115" approved="yes">
+        <source>You are about to remove authorization for the application  "%client%" to act on behalf of your users.</source>
+        <target state="final">Du håller på att ta bort auktorisering för applikationen  "%client%" att agera å dina användares vägnar.</target>
+      </trans-unit>
+      <trans-unit id="116" approved="yes">
+        <source>You are about to remove authorization of application "%client%" to act on behalf of your users with the following permissions:</source>
+        <target state="final">Du håller på att ta bort auktoriseringen för applikationen "%client%" att agera å dina användares vägnar med följande behörighet:</target>
+      </trans-unit>
+      <trans-unit id="117" approved="yes">
+        <source>Do you want to remove this access?</source>
+        <target state="final">Vill du ta bort denna åtkomst?</target>
+      </trans-unit>
+      <trans-unit id="118" approved="yes">
+        <source>Remove access</source>
+        <target state="final">Ta bort åtkomst</target>
+      </trans-unit>
+      <trans-unit id="119" approved="yes">
+        <source>Authorize access for application</source>
+        <target state="final">Auktorisera åtkomst för applikation</target>
+      </trans-unit>
+      <trans-unit id="120" approved="yes">
+        <source>User account is disabled</source>
+        <target state="final">Användarkontot är inaktiverat</target>
+      </trans-unit>
+      <trans-unit id="121" approved="yes">
+        <source>Did not find tenant?</source>
+        <target state="final">Hittade du inte hyresgästen?</target>
+      </trans-unit>
+      <trans-unit id="122" approved="yes">
+        <source>Continue with</source>
+        <target state="final">Fortsätt med</target>
+      </trans-unit>
+      <trans-unit id="123" approved="yes">
+        <source>Log into another tenant</source>
+        <target state="final">Logga in på annan hyresgäst</target>
+      </trans-unit>
+      <trans-unit id="124" approved="yes">
+        <source>logged out</source>
+        <target state="final">utloggad</target>
+      </trans-unit>
+      <trans-unit id="125" approved="yes">
+        <source>Welcome to</source>
+        <target state="final">Välkommen till</target>
+      </trans-unit>
+      <trans-unit id="126" approved="yes">
+        <source>Minimum length = %minimum_length%</source>
+        <target state="final">Minimilängd = %minimum_length%</target>
+      </trans-unit>
+      <trans-unit id="127" approved="yes">
+        <source>Maximum length = %maximum_length%</source>
+        <target state="final">Maximal längd = %maximum_length%</target>
+      </trans-unit>
+      <trans-unit id="128" approved="yes">
+        <source>Must contain one upper case letter (A-Z)</source>
+        <target state="final">Måste innehålla en stor bokstav (A-Z)</target>
+      </trans-unit>
+      <trans-unit id="129" approved="yes">
+        <source>Must contain one lower case letter (a-z)</source>
+        <target state="final">Måste innehålla en liten bokstav (a-z)</target>
+      </trans-unit>
+      <trans-unit id="130" approved="yes">
+        <source>Must contain one number (0-9)</source>
+        <target state="final">Måste innehålla en siffra (0-9)</target>
+      </trans-unit>
+      <trans-unit id="131" approved="yes">
+        <source>Must contain one special character (~!@#$%^&amp;*()_+-={}|)</source>
+        <target state="final">Måste innehålla ett specialtecken (~!@#$%^&amp;*()_+-={}|)</target>
+      </trans-unit>
+      <trans-unit id="132" approved="yes">
+        <source>Password requirements:</source>
+        <target state="final">Lösenordskrav:</target>
+      </trans-unit>
+      <trans-unit id="133" approved="yes">
+        <source>The password you entered does not meet the password requirements.</source>
+        <target state="final">Lösenordet du har angett lever inte upp till lösenordskraven.</target>
+      </trans-unit>
+      <trans-unit id="134" approved="yes">
+        <source>We could not find your account with that User Name. Please double-check and try again.</source>
+        <target state="final">Vi kunde inte hitta ditt konto med det användarnamnet. Dubbelkolla och försök igen.</target>
+      </trans-unit>
+      <trans-unit id="135" approved="yes">
+        <source>You have opened a one-time password reset link that has either been used or is no longer valid. Please request a new one using the form below.</source>
+        <target state="final">Du har öppnat en engångslänk för lösenordsåterställning som antingen har använts eller inte längre är giltig. Begär en ny för att använda formuläret nedan.</target>
+      </trans-unit>
+      <trans-unit id="136">
+        <source>New passwords do not match.</source>
+        <target state="needs-translation">New passwords do not match.</target>
+      </trans-unit>
+      <trans-unit id="137">
+        <source>Cannot change the password now. Try again later.</source>
+        <target state="needs-translation">Cannot change the password now. Try again later.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

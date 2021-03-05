@@ -1,0 +1,70 @@
+{#
+/*
+ * Your installation or use of this SugarCRM file is subject to the applicable
+ * terms available at
+ * http://support.sugarcrm.com/Resources/Master_Subscription_Agreements/.
+ * If you do not agree to all of the applicable terms or do not have the
+ * authority to bind the entity as an authorized representative, then do not
+ * install or use this SugarCRM file.
+ *
+ * Copyright (C) SugarCRM Inc. All rights reserved.
+ */
+#}
+{% set isMarketing = true %}
+{% extends "index-with-alerts.html.twig" %}
+
+{% block content %}
+{% set errorDetails = app.getSession().getFlashBag().get('errorDetails') %}
+<div class="thumbnail idm-set-password">
+    <div class="tcenter">
+        {% include 'logo.html.twig' %}
+    </div>
+    <section class="content">
+        <h3>{{ "Forgot Password?"|trans }}</h3>
+        <p>{{ "Enter your user name below to receive the password reset instructions."|trans }}</p>
+    </section>
+    <form name="forgot-password" id="submit_section"  method="post" action="{{ path('forgotPasswordProcess') }}" class="tcenter">
+        {% if tid %}
+            <input type="hidden" name="tid" value="{{ tid }}">
+        {% endif %}
+        {% if tid is empty %}
+            <div class="control-group">
+            <span class="edit">
+              <input type="text" name="tid" id="tid" value="" placeholder="{{ 'Tenant'|trans }} ({{ 'Required'|trans }})" class="inherit-width"
+                     aria-label="tenant">
+            </span>
+            </div>
+        {% endif %}
+        <div class="control-group">
+            <span class="edit">
+                {% if errorDetails is not empty and errorDetails.username is not empty %}
+                    <input type="text" name="user_name" id="username" value="" placeholder="{{ errorDetails.username }}"
+                           class="inherit-width error" aria-label="username" onkeypress="this.classList.remove('error')">
+                {% else %}
+                    <input type="text" name="user_name" id="username" value="" placeholder="{{ 'User Name'|trans }} ({{ 'Required'|trans }})"
+                     class="inherit-width" aria-label="username">
+                {% endif %}
+            </span>
+        </div>
+        {% if recaptcha_sitekey %}
+            <div class="control-group" style="text-align: right">
+                {% include 'recaptcha.html.twig' %}
+            </div>
+        {% endif %}
+        {% include 'honeypot.html.twig' %}
+        <div class="login-footer">
+            <span class="edit">
+             <a href="{{ path('loginRender') }}" class="btn btn-secondary"
+                 name="login_button" id="login_button">{{ 'Cancel'|trans }}</a>
+              <a href="javascript:void(0);" class="btn btn-primary" role="button" tabindex="0"
+                 name="login_button" id="submit_btn">{{ 'Send'|trans }}</a>
+            </span>
+        </div>
+        <input type="hidden" id="csrf_token" name="csrf_token" value="{{ csrf_token }}">
+        <input type="submit" id="submit-form" style="display: none">
+    </form>
+</div>
+{% endblock %}
+{% block marketing %}
+    {% include 'marketing.html.twig' %}
+{% endblock %}
