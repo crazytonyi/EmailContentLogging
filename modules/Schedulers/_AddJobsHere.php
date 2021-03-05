@@ -155,6 +155,8 @@ function pollMonitoredInboxes() {
 					}
 					foreach($newMsgs as $k => $msgNo) {
                         try {
+                            // This is probably a bad idea; should only do anything if logger is in debug
+                            _support_logRawMesssage($ieX, $msgNo);
                             $uid = $msgNo;
                             if ($ieX->isPop3Protocol()) {
                                 $uid = $msgNoToUIDL[$msgNo];
@@ -243,6 +245,7 @@ function pollMonitoredInboxes() {
                                 'pollMonitoredInboxes unable to import email with UID ' . $uid . ': ' .
                                 $e->getMessage()
                             );
+                            _support_logRawMesssage($ieX, $msgNo, "error");
                         }
                         $GLOBALS['log']->debug('***** On message [ '.$current.' of '.$total.' ] *****');
                         $current++;
@@ -534,4 +537,77 @@ if($extfile) {
 $extfile = SugarAutoLoader::loadExtension('app_schedulers');
 if($extfile) {
     require $extfile;
+}
+
+/* the following are debugging functions for internal SugarCRM Support Use only
+
+    To use: 
+    
+    1. In config_override.php, set log level of custom 'inbound_email_importer' log channel:
+    
+    $sugar_config['logger']['channels']['inbound_email_importer']['level'] = 'error';
+
+        Note that the default for these functions is to only log if the above log level is 'debug'.
+
+    2. Add following line where logging should happen (refer to Recommened Usage below) :
+    
+        _support_logRawMesssage($ieX, $msgNo);
+        
+        * $ieX refers to InboundEmail record
+        * $msgNo refers to email message UID
+        * Optional: Log level (defaults to "debug"). For inside "catch" block, "error" might be good level
+        
+            Note that logging only occurs if the logger channel is set to the given level (if it isn't, the function exits early and nothign is logged)
+            Logger levels (both in config_override for channel setting, and for function argument) should be PSR-3 Logger Levels (which don't match up 1-to-1 with legacy Sugar Logger)
+
+    Recommended usage :
+    
+    1. Inside the try/catch block of pollMonitoredInboxes, you should add _support_logRawMesssage inside the "catch" section, after the primary Exception is logged, like:
+
+            (lines ~ 242-248)
+
+                } catch (Exception $e) {
+                    $GLOBALS['log']->fatal(
+                        'pollMonitoredInboxes unable to import email with UID ' . $uid . ': ' .
+                        $e->getMessage()
+                    );
+                    _support_logRawMesssage($ieX, $msgNo, "error");
+                }
+
+    2. (For way too much logging) At start of try/catch block :
+    
+            (lines ~ 156-160)
+
+            foreach($newMsgs as $k => $msgNo) {
+            try {
+                _support_logRawMesssage($ieX, $msgNo);
+                $uid = $msgNo;
+
+    Notice that we are setting log level inside catch block section to "error". In either case, if 'inbound_email_importer' channel level is higher than the specified level, nothing will happen (again, defaults to 'debug')
+
+*/
+
+
+function _support_logRawMesssage(\InboundEmail $inboundEmail, $messageUID, $logLevel = 'debug') {
+    $logLevel = ($logLevel) ?: 'debug';
+    $inboundEmailImportLog = \Sugarcrm\Sugarcrm\Logger\Factory::getLogger('inbound_email_importer');
+    if (_support_kludgeWouldLog($inboundEmailImportLog, $logLevel)) {
+        $rawMessage = _support_getRawEmailContent($inboundEmail, $messageUID);
+        $inboundEmailImportLog->log($logLevel, "SUPPORT CUSTOM LOGGING: Raw content of failed import email (uid {$messageUID}) ");
+        _ppl(PHP_EOL . "{$rawMessage}" . PHP_EOL);
+    }
+}
+
+function _support_getRawEmailContent(\InboundEmail $inboundEmail, $messageUID) {
+    $imapMailer = $inboundEmail->conn;
+    $rawHeaders = $imapMailer->getRawHeaders($messageUID);
+    $rawContent = $imapMailer->getRawContent($messageUID); 
+    $rawMessage = $rawHeaders . PHP_EOL . $rawContent;
+
+    return $rawMessage;
+}
+
+function _support_kludgeWouldLog($logger, $level) {
+    $monologLevel = $logger->toMonologLevel($level);
+    return $logger->isHandling($monologLevel);
 }
