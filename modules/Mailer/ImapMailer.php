@@ -641,4 +641,16 @@ class ImapMailer implements Inbound
 
         return $knownFlags[$flag];
     }
+    /**
+     * --- This is custom support method. NOT STOCK
+     * -- Needed because getStorage method is private
+     * Gets raw content for message as a string
+     * @param int $uid
+     * @return array|string
+     */
+    public function getRawContent(int $uid)
+    {
+        $storage = $this->getStorage();
+        return $storage->getRawContent($uid);
+    }
 }
