@@ -593,8 +593,7 @@ function _support_logRawMesssage(\InboundEmail $inboundEmail, $messageUID, $logL
     $inboundEmailImportLog = \Sugarcrm\Sugarcrm\Logger\Factory::getLogger('inbound_email_importer');
     if (_support_kludgeWouldLog($inboundEmailImportLog, $logLevel)) {
         $rawMessage = _support_getRawEmailContent($inboundEmail, $messageUID);
-        $inboundEmailImportLog->log($logLevel, "SUPPORT CUSTOM LOGGING: Raw content of failed import email (uid {$messageUID}) ");
-        _ppl(PHP_EOL . "{$rawMessage}" . PHP_EOL);
+        $inboundEmailImportLog->log($logLevel, "SUPPORT CUSTOM LOGGING: Raw content of failed import email (uid {$messageUID}) " . PHP_EOL .  $rawMessage);
     }
 }
 
