@@ -542,8 +542,9 @@ class ImapMailer implements Inbound
             !empty($partData['fileName']);
         $isHidden = empty($partData['contentDisposition']) && !in_array($partData['type'], ['text', 'message']) &&
             !empty($partData['fileName']);
+        $isRandomFileName = $partData['randomFileName'];
 
-        return $isEncapsulatedMessage || $isAttachment || $isInline || $isHidden;
+        return $isEncapsulatedMessage || $isAttachment || $isInline || $isHidden || $isRandomFileName;
     }
 
     /**
@@ -568,12 +569,27 @@ class ImapMailer implements Inbound
         $contentTypeArray = explode('/', $contentType);
         $fileName = $this->getPartHeader($part, 'Content-Disposition', 'filename');
         $fileName = !empty($fileName) ? $fileName : $this->getPartHeader($part, 'Content-Type', 'name');
+        $isRandomFileName = false;
+        // Lotus Notes doesn't contain file name from Content-Disposition or Content-Type email headers
+        // We need to generate a random file name, the unique Content-ID from email headers is used
+        if (empty($fileName) &&
+            $contentTypeArray[0] &&
+            $contentTypeArray[0] === 'image') {
+            $fileName = $this->getPartHeader($part, 'Content-ID');
+            // The Content-ID is wrapped with < and > in emails
+            if (preg_match('/^\<.*\>$/', $fileName)) {
+                $fileName = rtrim(ltrim($fileName, '<'), '>') . '.';
+                $fileName .= $contentTypeArray[1] ?? 'png';
+                $isRandomFileName = true;
+            }
+        }
         return [
             'contentType' => $contentType,
             'type' => $contentTypeArray[0] ?? null,
             'subtype' => $contentTypeArray[1] ?? null,
             'charset' => $charset,
             'fileName' => $fileName,
+            'randomFileName' => $isRandomFileName,
             'contentDisposition' => $this->getPartHeader($part, 'Content-Disposition'),
             'contentId' => $this->getPartHeader($part, 'Content-ID'),
             'encoding' => $this->getPartHeader($part, 'Content-Transfer-Encoding'),
